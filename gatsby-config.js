@@ -31,13 +31,17 @@ module.exports = {
         slug: '/about/',
       },
       {
+        name: 'Blog',
+        slug: '/blog/',
+      },
+      {
         name: 'Contact',
         slug: '/contact/',
       },
     ],
     postsPerFirstPage: 7,
     postsPerPage: 6,
-    basePath: '/',
+    basePath: '/blog',
   },
   plugins: [
     `gatsby-plugin-emotion`,

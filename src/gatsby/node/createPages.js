@@ -16,11 +16,11 @@ module.exports = async ({ graphql, actions }) => {
     const prev = i === 0 ? null : posts[i - 1].node
 
     createPage({
-      path: `${basePath === '/' ? '' : basePath}/${post.node.slug}/`,
+      path: `${basePath === '/blog' ? '' : basePath}/${post.node.slug}/`,
       component: path.resolve(`./src/templates/post.js`),
       context: {
         slug: post.node.slug,
-        basePath: basePath === '/' ? '' : basePath,
+        basePath: basePath === '/blog' ? '' : basePath,
         prev,
         next,
       },
@@ -36,8 +36,8 @@ module.exports = async ({ graphql, actions }) => {
     itemsPerPage: config.siteMetadata.postsPerPage || 6,
     pathPrefix: basePath,
     context: {
-      basePath: basePath === '/' ? '' : basePath,
-      paginationPath: basePath === '/' ? '' : `/${basePath}`,
+      basePath: basePath === '/blog' ? '' : basePath,
+      paginationPath: basePath === '/blog' ? '' : `/${basePath}`,
     },
   })
 
@@ -47,7 +47,7 @@ module.exports = async ({ graphql, actions }) => {
 
   tags.forEach((tag, i) => {
     const tagPagination =
-      basePath === '/'
+      basePath === '/blog'
         ? `/tag/${tag.node.slug}`
         : `/${basePath}/tag/${tag.node.slug}`
 
@@ -59,7 +59,7 @@ module.exports = async ({ graphql, actions }) => {
       pathPrefix: tagPagination,
       context: {
         slug: tag.node.slug,
-        basePath: basePath === '/' ? '' : basePath,
+        basePath: basePath === '/blog' ? '' : basePath,
         paginationPath: tagPagination,
       },
     })

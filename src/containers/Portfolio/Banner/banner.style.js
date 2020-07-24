@@ -2,12 +2,12 @@ import styled from 'styled-components'
 
 const BannerWrapper = styled.section`
   position: relative;
-  background-color: transparent;
+  background-color: var(--accent);
   display: flex;
   align-items: center;
   padding-top: 80px;
   display: flex;
-  align-items: flex-end;
+  /* align-items: flex-end; */
   @media (min-width: 991px) {
     min-height: 100vh;
   }

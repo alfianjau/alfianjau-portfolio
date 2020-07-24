@@ -1,7 +1,7 @@
 import React, { useEffect, Fragment } from 'react'
 import styled from '@emotion/styled'
 // import { Global } from '@emotion/core'
-import Footer from '../components/Footer'
+// import Footer from '../components/Footer'
 // import { globalStyles } from '../styles/globalStyles.js'
 
 import { ThemeProvider } from 'styled-components'
@@ -19,7 +19,7 @@ const Root = styled.div`
   font-family: ${props => props.theme.fonts.body};
 `
 
-const Skip = styled.a`
+/* const Skip = styled.a`
   font-family: ${props => props.theme.fonts.body};
   padding: 0 1rem;
   line-height: 60px;
@@ -36,7 +36,7 @@ const Skip = styled.a`
   &:hover {
     top: 0;
   }
-`
+` */
 
 const Layout = props => {
   function handleFirstTab(e) {
@@ -65,7 +65,6 @@ const Layout = props => {
           </Fragment>
         </ThemeProvider>
       </div>
-      <Footer />
     </Root>
   )
 }

@@ -11,7 +11,7 @@ import SocialProfile from '../SocialProfile'
 import BannerWrapper from './banner.style'
 
 import { cornerDownRight } from 'react-icons-kit/feather/cornerDownRight'
-import PersonImage from '../../../../common/src/assets/image/portfolio/person.png'
+import PersonImage from '../../../../static/images/alfianjau.jpeg'
 
 const BannerSection = ({
   row,
@@ -52,7 +52,7 @@ const BannerSection = ({
               <Heading content="Freelance Frontend Developer" {...roleStyle} />
             </Box>
             <Text
-              content="The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Lorem Ipsum is simply dummy text of the printing."
+              content="5 years experience on Frontend development"
               {...aboutStyle}
             />
             <SocialProfile items={Data.portfolioJson.SOCIAL_PROFILES} />
@@ -95,7 +95,8 @@ BannerSection.defaultProps = {
   imageArea: {
     width: ['100%', '100%', '50%', '60%'],
     flexBox: true,
-    alignItems: 'flex-end',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   greetingStyle: {
     as: 'h3',

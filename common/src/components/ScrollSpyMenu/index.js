@@ -1,34 +1,35 @@
-import React, { useContext } from 'react';
-import PropTypes from 'prop-types';
-import Scrollspy from 'react-scrollspy';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+import React, { useContext } from 'react'
+import { Link } from 'gatsby'
+import PropTypes from 'prop-types'
+import Scrollspy from 'react-scrollspy'
+import { AnchorLink } from 'gatsby-plugin-anchor-links'
 
-import { DrawerContext } from '../../contexts/DrawerContext';
+import { DrawerContext } from '../../contexts/DrawerContext'
 
 const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
-  const { dispatch } = useContext(DrawerContext);
+  const { dispatch } = useContext(DrawerContext)
   // empty array for scrollspy items
-  const scrollItems = [];
+  const scrollItems = []
 
   // convert menu path to scrollspy items
   menuItems.forEach(item => {
-    scrollItems.push(item.path.slice(1));
-  });
+    scrollItems.push(item.path.slice(1))
+  })
 
   // Add all classs to an array
-  const addAllClasses = ['scrollspy__menu'];
+  const addAllClasses = ['scrollspy__menu']
 
   // className prop checking
   if (className) {
-    addAllClasses.push(className);
+    addAllClasses.push(className)
   }
 
   // Close drawer when click on menu item
   const toggleDrawer = () => {
     dispatch({
       type: 'TOGGLE',
-    });
-  };
+    })
+  }
 
   return (
     <Scrollspy
@@ -40,19 +41,19 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
       {menuItems.map((menu, index) => (
         <li key={`menu-item-${index}`}>
           {menu.staticLink ? (
-            <a href={menu.path}>{menu.label}</a>
+            <Link to={menu.path}>{menu.label}</Link>
           ) : (
             <>
               {drawerClose ? (
                 <AnchorLink
-                  href={menu.path}
+                  to={menu.path}
                   offset={menu.offset}
                   onClick={toggleDrawer}
                 >
                   {menu.label}
                 </AnchorLink>
               ) : (
-                <AnchorLink href={menu.path} offset={menu.offset}>
+                <AnchorLink to={menu.path} offset={menu.offset}>
                   {menu.label}
                 </AnchorLink>
               )}
@@ -61,8 +62,8 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
         </li>
       ))}
     </Scrollspy>
-  );
-};
+  )
+}
 
 ScrollSpyMenu.propTypes = {
   /** className of the ScrollSpyMenu. */
@@ -95,11 +96,11 @@ ScrollSpyMenu.propTypes = {
    * Function to be executed when the active item has been updated [optional].
    */
   onUpdate: PropTypes.func,
-};
+}
 
 ScrollSpyMenu.defaultProps = {
   componentTag: 'ul',
   currentClassName: 'is-current',
-};
+}
 
-export default ScrollSpyMenu;
+export default ScrollSpyMenu

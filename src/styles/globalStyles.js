@@ -95,7 +95,8 @@ export const globalStyles = css`
   }
 
   :root {
-    --primary: #00bcd4;
+    --accent: #00bcd4;
+    --primary: #f7f0e9;
   }
 
   /* Added to Fix Footer to bottom of viewport */

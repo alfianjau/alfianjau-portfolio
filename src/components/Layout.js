@@ -1,9 +1,20 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, Fragment } from 'react'
 import styled from '@emotion/styled'
-import { Global } from '@emotion/core'
+// import { Global } from '@emotion/core'
 import Menu from '../components/Menu'
 import Footer from '../components/Footer'
-import { globalStyles } from '../styles/globalStyles.js'
+// import { globalStyles } from '../styles/globalStyles.js'
+
+import { ThemeProvider } from 'styled-components'
+import Sticky from 'react-stickynode'
+import { DrawerProvider } from '../../common/src/contexts/DrawerContext'
+import { portfolioTheme } from '../../common/src/theme/portfolio'
+import { ResetCSS } from '../../common/src/assets/css/style'
+import {
+  GlobalStyle,
+  ContentWrapper,
+} from '../containers/Portfolio/portfolio.style'
+import Navbar from '../containers/Portfolio/Navbar'
 
 const Root = styled.div`
   font-family: ${props => props.theme.fonts.body};
@@ -39,14 +50,24 @@ const Layout = props => {
   return (
     <Root className="siteRoot">
       <div className="siteContent">
-        <Skip href="#main" id="skip-navigation">
-          Skip to content
-        </Skip>
-        <Menu />
-        <div id="main">{props.children}</div>
+        <ThemeProvider theme={portfolioTheme}>
+          <ResetCSS />
+          <GlobalStyle />
+          <Skip href="#main" id="skip-navigation">
+            Skip to content
+          </Skip>
+          <Menu />
+          <ContentWrapper>
+            <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
+              <DrawerProvider>
+                <Navbar />
+              </DrawerProvider>
+            </Sticky>
+          </ContentWrapper>
+          <div id="main">{props.children}</div>
+        </ThemeProvider>
       </div>
       <Footer />
-      <Global styles={globalStyles} />
     </Root>
   )
 }

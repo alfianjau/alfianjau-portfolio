@@ -6,6 +6,7 @@ export default {
     secondary: '#e9e9e9',
     tertiary: '#f3f3f3',
     highlight: '#5b8bf7',
+    accent: '#f7f0e9',
   },
   fonts: {
     body:

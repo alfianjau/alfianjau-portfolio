@@ -20,22 +20,32 @@
   "MENU_ITEMS": [
     {
       "label": "ME",
-      "path": "#banner_section",
+      "path": "/#banner_section",
       "offset": "0"
     },
     {
       "label": "PROJECT",
-      "path": "#portfolio_section",
+      "path": "/#portfolio_section",
       "offset": "0"
     },
     {
-      "label": "AWARDS",
-      "path": "#awards_section",
+      "label": "ABOUT",
+      "path": "/about",
+      "offset": "0"
+    },
+    {
+      "label": "BLOG",
+      "path": "/blog",
+      "offset": "0"
+    },
+    {
+      "label": "CONTACT",
+      "path": "/contact",
       "offset": "0"
     },
     {
       "label": "WHY ME?",
-      "path": "#process_section",
+      "path": "/#process_section",
       "offset": "0"
     }
   ],

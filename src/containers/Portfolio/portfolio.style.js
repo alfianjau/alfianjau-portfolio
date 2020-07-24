@@ -17,6 +17,11 @@ export const GlobalStyle = createGlobalStyle`
     margin-top: 0;
   }
 
+  :root{
+    --accent: #00bcd4;
+    --primary: #f7f0e9;
+  }
+
   section {
     position: relative;
   }
@@ -121,10 +126,10 @@ export const GlobalStyle = createGlobalStyle`
 `
 
 export const ContentWrapper = styled.div`
-  overflow: hidden;
+  /* overflow: hidden; */
   .sticky-nav-active {
     .portfolio_navbar {
-      background: #fff;
+      background: var(--primary);
       box-shadow: 0px 3px 8px 0px rgba(43, 83, 135, 0.08);
       padding: 15px 0;
 
@@ -169,6 +174,7 @@ export const ContentWrapper = styled.div`
   }
 
   .portfolio_navbar {
+    background: var(--accent);
     position: fixed;
     top: 0;
     left: 0;

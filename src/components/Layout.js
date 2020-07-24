@@ -50,19 +50,19 @@ const Layout = props => {
     <Root className="siteRoot">
       <div className="siteContent">
         <ThemeProvider theme={portfolioTheme}>
-          <ResetCSS />
-          <GlobalStyle />
-          <Skip href="#main" id="skip-navigation">
-            Skip to content
-          </Skip>
-          <ContentWrapper>
-            <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
-              <DrawerProvider>
-                <Navbar />
-              </DrawerProvider>
-            </Sticky>
-          </ContentWrapper>
-          <div id="main">{props.children}</div>
+          <Fragment>
+            <ResetCSS />
+            <GlobalStyle />
+
+            <ContentWrapper>
+              <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
+                <DrawerProvider>
+                  <Navbar />
+                </DrawerProvider>
+              </Sticky>
+            </ContentWrapper>
+            <div id="main">{props.children}</div>
+          </Fragment>
         </ThemeProvider>
       </div>
       <Footer />

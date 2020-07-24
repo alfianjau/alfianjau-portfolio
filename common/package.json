@@ -1,0 +1,11 @@
+{
+  "name": "common",
+  "version": "1.2.0",
+  "description": "common components",
+  "main": "index.js",
+  "author": "Muhammad Alfian Jauhari",
+  "license": "MIT",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  }
+}

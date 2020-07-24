@@ -4,6 +4,9 @@ import Container from '../components/Container'
 import PageTitle from '../components/PageTitle'
 // import ContactForm from '../components/ContactForm'
 import SEO from '../components/SEO'
+import PortfolioShowcase from '../containers/Portfolio/PortfolioShowcase'
+import Skill from '../containers/Portfolio/Skill'
+import Banner from '../containers/Portfolio/Banner'
 
 const Index = ({ data }) => {
   return (
@@ -13,7 +16,9 @@ const Index = ({ data }) => {
         description="portfolio project for life"
       />
       <Container>
-        <PageTitle>Landing page</PageTitle>
+        <Banner />
+        <PortfolioShowcase />
+        <Skill />
       </Container>
     </Layout>
   )

@@ -94,10 +94,14 @@ export const globalStyles = css`
     vertical-align: baseline;
   }
 
+  :root {
+    --primary: #00bcd4;
+  }
+
   /* Added to Fix Footer to bottom of viewport */
   html,
   body {
-    background: white;
+    background: var(--primary);
     height: 100%;
   }
   .siteRoot {

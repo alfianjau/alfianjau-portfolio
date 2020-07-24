@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from '@emotion/styled'
+import AdditionalFooter from '../containers/Portfolio/Footer'
 
 const Wrapper = styled.footer`
   display: flex;
@@ -43,6 +44,7 @@ const Item = styled.li`
 
 const Footer = () => (
   <Wrapper>
+    <AdditionalFooter />
     <List>
       <Item>
         <a
@@ -59,19 +61,11 @@ const Footer = () => (
       </Item>
       <Item>
         <a
-          href="https://github.com/ryanwiemer/gatsby-starter-gcn"
+          href="https://github.com/alfianjau"
           target="_blank"
           rel="noopener noreferrer"
         >
-          gatsby-starter-gcn
-        </a>{' '}
-        by{' '}
-        <a
-          href="https://github.com/ryanwiemer"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          @ryanwiemer
+          Alfianjau
         </a>
       </Item>
     </List>

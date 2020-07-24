@@ -3,6 +3,15 @@ const query = require('../data/query')
 const path = require(`path`)
 const { paginate } = require(`gatsby-awesome-pagination`)
 
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      alias: {
+        '~common': path.resolve(__dirname, 'common'),
+      },
+    },
+  })
+}
 module.exports = async ({ graphql, actions }) => {
   const { createPage } = actions
 

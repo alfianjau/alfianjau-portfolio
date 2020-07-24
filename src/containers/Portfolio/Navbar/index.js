@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { useStaticQuery, graphql,Link } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 import NavbarWrapper from '../../../../common/src/components/Navbar'
 import Drawer from '../../../../common/src/components/Drawer'
@@ -71,7 +71,7 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
             >
               <ScrollSpyMenu
                 className="mobile_menu"
-                menuItems={<Link to={Data.portfolioJson.MENU_ITEMS} />}
+                menuItems={Data.portfolioJson.MENU_ITEMS}
                 drawerClose={state.isOpen}
                 offset={-100}
               />

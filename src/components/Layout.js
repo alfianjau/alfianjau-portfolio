@@ -1,7 +1,6 @@
 import React, { useEffect, Fragment } from 'react'
 import styled from '@emotion/styled'
 // import { Global } from '@emotion/core'
-import Menu from '../components/Menu'
 import Footer from '../components/Footer'
 // import { globalStyles } from '../styles/globalStyles.js'
 
@@ -56,7 +55,6 @@ const Layout = props => {
           <Skip href="#main" id="skip-navigation">
             Skip to content
           </Skip>
-          <Menu />
           <ContentWrapper>
             <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
               <DrawerProvider>

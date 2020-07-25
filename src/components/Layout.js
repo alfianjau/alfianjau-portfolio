@@ -14,6 +14,7 @@ import {
   ContentWrapper,
 } from '../containers/Portfolio/portfolio.style'
 import Navbar from '../containers/Portfolio/Navbar'
+import Footer from '../containers/Portfolio/Footer'
 
 const Root = styled.div`
   font-family: ${props => props.theme.fonts.body};
@@ -53,7 +54,6 @@ const Layout = props => {
           <Fragment>
             <ResetCSS />
             <GlobalStyle />
-
             <ContentWrapper>
               <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
                 <DrawerProvider>
@@ -62,6 +62,7 @@ const Layout = props => {
               </Sticky>
             </ContentWrapper>
             <div id="main">{props.children}</div>
+            <Footer />
           </Fragment>
         </ThemeProvider>
       </div>

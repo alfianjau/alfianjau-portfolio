@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
+import { magic } from 'react-icons-kit/fa/magic'
 import NavbarWrapper from '../../../../common/src/components/Navbar'
 import Drawer from '../../../../common/src/components/Drawer'
 import Button from '../../../../common/src/components/Button'
@@ -10,9 +11,9 @@ import HamburgMenu from '../../../../common/src/components/HamburgMenu'
 import Container from '../../../../common/src/components/UI/Container'
 import { DrawerContext } from '../../../../common/src/contexts/DrawerContext'
 import ScrollSpyMenu from '../../../../common/src/components/ScrollSpyMenu'
-
-import LogoImage from '../../../../common/src/assets/image/portfolio/logo.png'
-import LogoImageAlt from '../../../../common/src/assets/image/portfolio/logo-alt.png'
+import { themeGet } from 'styled-system'
+import LogoImage from '../../../../common/src/assets/image/portfolio/avatar.png'
+import LogoImageAlt from '../../../../common/src/assets/image/portfolio/avatar.png'
 
 const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
   const Data = useStaticQuery(graphql`
@@ -66,7 +67,9 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
             <Drawer
               width="420px"
               placement="right"
-              drawerHandler={<HamburgMenu barColor="#3444f1" />}
+              drawerHandler={
+                <HamburgMenu barColor={themeGet('colors.primary')} />
+              }
               open={state.isOpen}
               toggleHandler={toggleHandler}
             >

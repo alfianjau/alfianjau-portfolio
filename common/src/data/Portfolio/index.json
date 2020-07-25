@@ -491,12 +491,12 @@
     },
     {
       "image": "../../assets/image/portfolio/client-avatar-3.jpg",
-      "review": "Another quality React-based product from RedQ Team. Manage to turn highly complex tech into simple components.",
+      "review": "Another quality React-based product from Alfianjau. Manage to turn highly complex tech into simple components.",
       "name": "Jon Doe",
       "designation": "Co-Founder & COO",
-      "twitterProfile": "https://twitter.com/redqinc",
-      "organization": "@Tonquin",
-      "organizationURL": "https://redq.io/"
+      "twitterProfile": "https://twitter.com/alfianjau",
+      "organization": "@alfianjau",
+      "organizationURL": "https://alfianjau.com/"
     }
   ],
   "FOOTER_MENU": [

@@ -9,9 +9,9 @@ import Image from '../../../../common/src/components/Image'
 import Container from '../../../../common/src/components/UI/Container'
 import SocialProfile from '../SocialProfile'
 import BannerWrapper from './banner.style'
-
 import { cornerDownRight } from 'react-icons-kit/feather/cornerDownRight'
 import PersonImage from '../../../../static/images/alfianjau.jpeg'
+import colors from '../../../../common/src/theme/portfolio/colors'
 
 const BannerSection = ({
   row,
@@ -46,7 +46,7 @@ const BannerSection = ({
             <Box {...roleWrapper}>
               <Icon
                 icon={cornerDownRight}
-                style={{ color: '#3444f1' }}
+                style={{ color: colors.primary }}
                 size={22}
               />
               <Heading content="Freelance Frontend Developer" {...roleStyle} />

@@ -9,7 +9,7 @@ import Image from '../../../../common/src/components/Image'
 import Button from '../../../../common/src/components/Button'
 import Container from '../../../../common/src/components/UI/Container'
 import { plus } from 'react-icons-kit/feather/plus'
-
+import { themeGet } from 'styled-system'
 import { ButtonWrapper } from '../../Portfolio/portfolio.style'
 import ProcessItem from './process.style'
 
@@ -260,7 +260,7 @@ ProcessSection.defaultProps = {
   buttonLabelStyle: {
     fontSize: '16px',
     fontWeight: '500',
-    color: '#3444f1',
+    color: `${themeGet('colors.primary')}`,
     mb: ['20px', '20px', '20px', '0', '0'],
     mr: '30px',
     width: ['100%', '100%', '100%', 'auto', 'auto'],

@@ -9,6 +9,7 @@ import Button from '../../../../common/src/components/Button'
 import Input from '../../../../common/src/components/Input'
 import Container from '../../../../common/src/components/UI/Container'
 import SocialProfile from '../SocialProfile'
+import colors from '../../../../common/src/theme/portfolio/colors'
 
 import {
   FooterWrapper,
@@ -83,23 +84,19 @@ const Footer = ({
               items={Data.portfolioJson.SOCIAL_PROFILES}
               iconSize={40}
             />
-            <Text
-              as="span"
-              content="© 2018 All rights reserved. "
-              {...copyrightStyle}
-            />
-            <a href="#1">
-              <Text as="span" content=" RedQ, Inc." {...copyrightStyle} />
+            <Text as="span" content="© 2020 . " {...copyrightStyle} />
+            <a href="/">
+              <Text as="span" content=" Alfianjau." {...copyrightStyle} />
             </a>
           </Box>
           <Box {...col} {...flexBox}>
             <Box {...contactItem}>
               <Text content="Need help?" {...contactTitle} />
-              <Text content="redq.io" {...contactInfo} />
+              <Text content="alfianjau.com" {...contactInfo} />
             </Box>
             <Box {...contactItem}>
               <Text content="Feel like talking" {...contactTitle} />
-              <Text content="+12 34 56789" {...contactInfo} />
+              <Text content="alfianjauhari@gmail.com" {...contactInfo} />
             </Box>
           </Box>
         </Box>
@@ -164,7 +161,7 @@ Footer.defaultProps = {
   },
   linkStyle: {
     fontSize: ['22px', '26px', '26px', '30px'],
-    color: '#3444f1',
+    color: colors.primary,
     mb: 0,
   },
   newsletterButton: {

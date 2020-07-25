@@ -233,7 +233,7 @@ export const ContentWrapper = styled.div`
             position: absolute;
             width: calc(100% - 8px);
             height: 11px;
-            background: ${themeGet('colors.primary')};
+            background: ${themeGet('colors.primaryHover')};
             bottom: 6px;
             left: 0;
             z-index: -1;

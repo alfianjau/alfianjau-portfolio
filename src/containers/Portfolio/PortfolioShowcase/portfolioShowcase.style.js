@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-
+import styled from 'styled-components'
+import { themeGet } from 'styled-system'
 export const PortfolioShowcaseWrapper = styled.div`
   @keyframes FadeInUp {
     from {
@@ -87,7 +87,7 @@ export const PortfolioShowcaseWrapper = styled.div`
               top: 0;
               left: 0;
               width: 0;
-              color: #3444f1;
+              color: ${themeGet('colors.primary')};
               overflow: hidden;
               white-space: nowrap;
               transition: 0.5s ease-in-out;
@@ -117,13 +117,13 @@ export const PortfolioShowcaseWrapper = styled.div`
   .rc-tabs-top {
     border: none;
   }
-`;
+`
 
 export const PortfolioShowcaseItem = styled.div`
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-`;
+`
 
 export const PortfolioLink = styled.div`
   margin-bottom: 36px;
@@ -137,7 +137,7 @@ export const PortfolioLink = styled.div`
     font-size: 16px;
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
-    color: #3444f1;
+    color: ${themeGet('colors.primary')};
     position: relative;
     padding: 0 0 2px 8px;
     @media (max-width: 990px) {
@@ -172,7 +172,7 @@ export const PortfolioLink = styled.div`
       }
     }
   }
-`;
+`
 
 export const BuiltWith = styled.div`
   margin-top: 60px;
@@ -183,7 +183,7 @@ export const BuiltWith = styled.div`
     display: inline-block;
     font-size: 16px;
     font-weight: 600;
-    color: #3444f1;
+    color: ${themeGet('colors.primary')};
     font-family: 'Raleway', sans-serif;
     padding: 5px 22px;
     position: relative;
@@ -209,7 +209,7 @@ export const BuiltWith = styled.div`
       transform: translateY(-50%);
     }
   }
-`;
+`
 
 export const PortfolioMeta = styled.div`
   flex: 0 0 100%;
@@ -227,7 +227,7 @@ export const PortfolioMeta = styled.div`
     max-width: 100%;
     margin-bottom: 15px;
   }
-`;
+`
 
 export const MetaItem = styled.span`
   margin-right: 45px;
@@ -261,11 +261,11 @@ export const MetaItem = styled.span`
     }
   }
   > a {
-    color: #3444f1;
+    color: ${themeGet('colors.primary')};
     font-weight: 700;
   }
   > b {
     font-family: 'roboto', sans-serif;
     margin-right: 5px;
   }
-`;
+`

@@ -9,6 +9,7 @@ import Text from '../../../../common/src/components/Text'
 import Heading from '../../../../common/src/components/Heading'
 import Image from '../../../../common/src/components/Image'
 import Container from '../../../../common/src/components/UI/Container'
+import colors from '../../../../common/src/theme/portfolio/colors'
 
 import {
   SkillItem,
@@ -99,7 +100,7 @@ const SkillSection = ({
                       percent={item.successRate}
                       strokeWidth="1.8"
                       trailWidth="1.8"
-                      strokeColor="#3444f1"
+                      strokeColor={colors.primary}
                       trailColor="#e3e7f2"
                     />
                   </ProgressBar>

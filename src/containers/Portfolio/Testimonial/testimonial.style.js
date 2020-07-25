@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-
+import styled from 'styled-components'
+import { themeGet } from 'styled-system'
 export const TestimonialWrapper = styled.div`
   .glide__track {
     padding: 30px 0;
@@ -24,7 +24,7 @@ export const TestimonialWrapper = styled.div`
       transform: translateX(-50%);
     }
   }
-`;
+`
 
 export const TestimonialItem = styled.div`
   position: relative;
@@ -35,10 +35,10 @@ export const TestimonialItem = styled.div`
 
   .reviewer_org {
     font-size: 14px;
-    color: #3444f1;
+    color: ${themeGet('colors.primary')}
     margin-left: 0.4em;
   }
-`;
+`
 
 export const TestimonialHead = styled.div`
   display: flex;
@@ -52,7 +52,7 @@ export const TestimonialHead = styled.div`
       color: #38a1f3;
     }
   }
-`;
+`
 
 export const TestimonialThumb = styled.div`
   width: 35px;
@@ -66,4 +66,4 @@ export const TestimonialThumb = styled.div`
     height: auto;
     display: block;
   }
-`;
+`

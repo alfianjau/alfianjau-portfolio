@@ -3,8 +3,13 @@ import { themeGet } from 'styled-system'
 import Line from '../../../common/src/assets/image/portfolio/dotted-line.png'
 
 export const GlobalStyle = createGlobalStyle`
+:root{
+    --accent: #00bcd6;
+    --primary: #f7f0e9;
+  }
   body{
     font-family: 'Roboto', sans-serif;
+    background-color: var(--primary);
   }
 
   h1,
@@ -17,10 +22,7 @@ export const GlobalStyle = createGlobalStyle`
     margin-top: 0;
   }
 
-  :root{
-    --accent: #00bcd4;
-    --primary: #f7f0e9;
-  }
+
 
   section {
     position: relative;
@@ -116,7 +118,7 @@ export const GlobalStyle = createGlobalStyle`
         content: '\f10b';
         font-family: Flaticon;
         font-size: 26px;
-        color: #3444f1;
+        color: ${themeGet('colors.primary')};
         transform: rotate(45deg);
         display: block;
       }
@@ -152,7 +154,8 @@ export const ContentWrapper = styled.div`
     transition: 0.2s ease-in-out;
     &:before {
       content: '';
-      background-color: ${themeGet('colors.primary', '#3444f1')};
+      /* background-color: ${themeGet('colors.primary')}; */
+      background-color: var(--primary);
       position: absolute;
       width: calc(100% + 4px);
       height: calc(100% + 4px);
@@ -230,7 +233,7 @@ export const ContentWrapper = styled.div`
             position: absolute;
             width: calc(100% - 8px);
             height: 11px;
-            background: #3444f1;
+            background: ${themeGet('colors.primary')};
             bottom: 6px;
             left: 0;
             z-index: -1;
@@ -271,7 +274,7 @@ export const ContentWrapper = styled.div`
           a {
             color: #302b4e;
             &:after {
-              background: #c2c7fb;
+              background: var(--accent);
             }
           }
         }
@@ -320,7 +323,7 @@ export const PrevButton = styled.div`
   cursor: pointer;
   &:hover {
     span {
-      background: #3444f1;
+      background: ${themeGet('colors.primary')};
       @media (min-width: 991px) {
         width: 100px;
       }
@@ -363,7 +366,7 @@ export const NextButton = styled.div`
   cursor: pointer;
   &:hover {
     span {
-      background: #3444f1;
+      background: ${themeGet('colors.primary')};
       @media (min-width: 991px) {
         width: 100px;
       }

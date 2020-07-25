@@ -8,14 +8,14 @@ const colors = {
   inactiveField: '#f2f2f2', // 5
   inactiveButton: '#b7dbdd', // 6
   inactiveIcon: '#EBEBEB', // 7
-  primary: '#3444f1', // 8
-  primaryHover: '#3444f1', // 9
+  primary: '#F06934', // 8
+  primaryHover: '#a7230b', // 9
   secondary: '#ff5b60', // 10
   secondaryHover: '#FF282F', // 11
   yellow: '#fdb32a', // 12
   yellowHover: '#F29E02', // 13
-  borderColor: '#1b1e25', //14
+  borderColor: '#1b1e25', // 14
   primaryBoxShadow: '0px 8px 20px -6px rgba(235,77,75,0.6)',
-};
+}
 
-export default colors;
+export default colors

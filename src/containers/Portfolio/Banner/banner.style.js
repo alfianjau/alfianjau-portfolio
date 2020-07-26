@@ -5,7 +5,7 @@ const BannerWrapper = styled.section`
   background-color: var(--accent);
   display: flex;
   align-items: center;
-  padding-top: 80px;
+  margin-top: -8rem;
   display: flex;
   /* align-items: flex-end; */
   @media (min-width: 991px) {

@@ -20,24 +20,9 @@ const Root = styled.div`
   font-family: ${props => props.theme.fonts.body};
 `
 
-/* const Skip = styled.a`
-  font-family: ${props => props.theme.fonts.body};
-  padding: 0 1rem;
-  line-height: 60px;
-  background: #2867cf;
-  color: white;
-  z-index: 101;
-  position: fixed;
-  top: -100%;
-  &:hover {
-    text-decoration: underline;
-  }
-  &:focus,
-  &:active,
-  &:hover {
-    top: 0;
-  }
-` */
+const Main = styled.div`
+  padding-top: 8rem;
+`
 
 const Layout = props => {
   function handleFirstTab(e) {
@@ -61,7 +46,7 @@ const Layout = props => {
                 </DrawerProvider>
               </Sticky>
             </ContentWrapper>
-            <div id="main">{props.children}</div>
+            <Main>{props.children}</Main>
             <Footer />
           </Fragment>
         </ThemeProvider>

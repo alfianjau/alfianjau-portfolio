@@ -49,19 +49,19 @@ const TestimonialSection = ({
     }
   `)
 
-  //Carousel Options
+  // Carousel Options
   const carouselOptions = {
     type: 'carousel',
     autoplay: 6000,
-    perView: 3,
-    gap: 28,
+    perView: 4,
+    gap: 30,
     animationDuration: 800,
     breakpoints: {
       990: {
-        perView: 3,
+        perView: 2,
       },
       767: {
-        perView: 2,
+        perView: 1,
       },
       500: {
         perView: 1,
@@ -71,13 +71,10 @@ const TestimonialSection = ({
 
   return (
     <Box {...sectionWrapper} as="section">
-      <Container noGutter mobileGutter width="1200px">
+      <Container noGutter mobileGutter display="flex">
         <Box {...secTitleWrapper}>
-          <Heading {...secTitle} content="What My Clients Say?" />
-          <Text
-            {...secDescription}
-            content="Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do eiusmod tempor incid idunt ut labore"
-          />
+          <Heading {...secTitle} content="Public Repositories" />
+          <Text {...secDescription} content="Some of my Github projects" />
         </Box>
         <TestimonialWrapper>
           <GlideCarousel
@@ -145,8 +142,8 @@ TestimonialSection.propTypes = {
 
 TestimonialSection.defaultProps = {
   sectionWrapper: {
-    pt: ['60px', '80px', '100px', '110px', '150px'],
-    pb: '50px',
+    pt: ['1rem', '1rem', '1rem', '1rem', '1rem'],
+    pb: '1rem',
   },
   secTitleWrapper: {
     mb: ['90px', '90px', '50px', '50px', '50px'],

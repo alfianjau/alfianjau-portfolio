@@ -91,10 +91,6 @@ const Footer = ({
           </Box>
           <Box {...col} {...flexBox}>
             <Box {...contactItem}>
-              <Text content="Need help?" {...contactTitle} />
-              <Text content="alfianjau.com" {...contactInfo} />
-            </Box>
-            <Box {...contactItem}>
               <Text content="Feel like talking" {...contactTitle} />
               <Text content="alfianjauhari@gmail.com" {...contactInfo} />
             </Box>

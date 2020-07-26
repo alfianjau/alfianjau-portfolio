@@ -51,7 +51,7 @@ const SkillSection = ({
 
   return (
     <Box {...sectionWrapper} as="section">
-      <Container noGutter mobileGutter width="auto">
+      <Container noGutter mobileGutter width="1200px">
         <Box {...secTitleWrapper}>
           <Heading {...secTitle} content="Ways I can help you" />
           <Text

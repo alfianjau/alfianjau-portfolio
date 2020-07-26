@@ -9,6 +9,7 @@ import Image from '../../../../common/src/components/Image'
 import Container from '../../../../common/src/components/UI/Container'
 import SocialProfile from '../SocialProfile'
 import BannerWrapper from './banner.style'
+import Github from '../../../containers/Portfolio/Testimonial'
 import { cornerDownRight } from 'react-icons-kit/feather/cornerDownRight'
 import PersonImage from '../../../../static/images/alfianjau.jpeg'
 import colors from '../../../../common/src/theme/portfolio/colors'
@@ -58,9 +59,10 @@ const BannerSection = ({
             <SocialProfile items={Data.portfolioJson.SOCIAL_PROFILES} />
           </Box>
           <Box {...imageArea} className="image_area">
-            <Image src={PersonImage} alt="Mat Helme" />
+            <Image src={PersonImage} alt="muhammad alfian jauhari" />
           </Box>
         </Box>
+        <Github />
       </Container>
     </BannerWrapper>
   )
@@ -85,7 +87,7 @@ BannerSection.defaultProps = {
     alignItems: 'stretch',
   },
   contentArea: {
-    width: ['100%', '100%', '50%', '40%'],
+    width: ['100%', '100%', '50%', '50%'],
     p: ['65px 0 80px 0', '65px 0 80px 0', '80px 0 60px 0', '0'],
     flexBox: true,
     flexWrap: 'wrap',
@@ -93,8 +95,9 @@ BannerSection.defaultProps = {
     flexDirection: 'column',
   },
   imageArea: {
-    width: ['100%', '100%', '50%', '60%'],
+    width: ['100%', '100%', '50%', '50%'],
     flexBox: true,
+    flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
   },

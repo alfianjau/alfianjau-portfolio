@@ -12,9 +12,9 @@ const Index = ({ data }) => {
   return (
     <Layout>
       <SEO title="Creative Coder" description="portfolio project for life" />
-        <Banner />
-        <PortfolioShowcase />
-        <Skill />
+      <Banner />
+      <PortfolioShowcase />
+      <Skill />
     </Layout>
   )
 }

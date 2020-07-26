@@ -1,40 +1,40 @@
-import { socialTwitter } from 'react-icons-kit/ionicons/socialTwitter';
-import { socialFacebook } from 'react-icons-kit/ionicons/socialFacebook';
-import { socialDribbbleOutline } from 'react-icons-kit/ionicons/socialDribbbleOutline';
-import { socialGithub } from 'react-icons-kit/ionicons/socialGithub';
-import { socialGoogleplusOutline } from 'react-icons-kit/ionicons/socialGoogleplusOutline';
+import { socialTwitter } from 'react-icons-kit/ionicons/socialTwitter'
+import { socialFacebook } from 'react-icons-kit/ionicons/socialFacebook'
+import { socialDribbbleOutline } from 'react-icons-kit/ionicons/socialDribbbleOutline'
+import { socialGithub } from 'react-icons-kit/ionicons/socialGithub'
+import { socialGoogleplusOutline } from 'react-icons-kit/ionicons/socialGoogleplusOutline'
 
-import Awardee1 from '../../assets/image/portfolio/awardee-1.png';
-import Awardee2 from '../../assets/image/portfolio/awardee-2.png';
-import Awardee3 from '../../assets/image/portfolio/awardee-3.png';
-import Awardee4 from '../../assets/image/portfolio/awardee-4.png';
-import AwardImage1 from '../../assets/image/portfolio/award-1.png';
-import AwardImage2 from '../../assets/image/portfolio/award-2.png';
-import AwardImage3 from '../../assets/image/portfolio/award-3.png';
-import AwardImage4 from '../../assets/image/portfolio/award-4.png';
+import Awardee1 from '../../assets/image/portfolio/awardee-1.png'
+import Awardee2 from '../../assets/image/portfolio/awardee-2.png'
+import Awardee3 from '../../assets/image/portfolio/awardee-3.png'
+import Awardee4 from '../../assets/image/portfolio/awardee-4.png'
+import AwardImage1 from '../../assets/image/portfolio/award-1.png'
+import AwardImage2 from '../../assets/image/portfolio/award-2.png'
+import AwardImage3 from '../../assets/image/portfolio/award-3.png'
+import AwardImage4 from '../../assets/image/portfolio/award-4.png'
 
-import PortfolioImage1 from '../../assets/image/portfolio/portfolio-1.jpg';
-import PortfolioImage2 from '../../assets/image/portfolio/portfolio-2.jpg';
+import PortfolioImage1 from '../../assets/image/portfolio/portfolio-1.jpg'
+import PortfolioImage2 from '../../assets/image/portfolio/portfolio-2.jpg'
 
-import Step1 from '../../assets/image/portfolio/step-1.png';
-import Step2 from '../../assets/image/portfolio/step-2.png';
-import Step3 from '../../assets/image/portfolio/step-3.png';
+import Step1 from '../../assets/image/portfolio/step-1.png'
+import Step2 from '../../assets/image/portfolio/step-2.png'
+import Step3 from '../../assets/image/portfolio/step-3.png'
 
-import SkillIcon1 from '../../assets/image/portfolio/skill-1.svg';
-import SkillIcon2 from '../../assets/image/portfolio/skill-2.svg';
-import SkillIcon3 from '../../assets/image/portfolio/skill-3.svg';
-import SkillIcon4 from '../../assets/image/portfolio/skill-4.svg';
+import SkillIcon1 from '../../assets/image/portfolio/skill-1.svg'
+import SkillIcon2 from '../../assets/image/portfolio/skill-2.svg'
+import SkillIcon3 from '../../assets/image/portfolio/skill-3.svg'
+import SkillIcon4 from '../../assets/image/portfolio/skill-4.svg'
 
-import Client1 from '../../assets/image/portfolio/client-1.png';
-import Client2 from '../../assets/image/portfolio/client-2.png';
-import Client3 from '../../assets/image/portfolio/client-3.png';
-import Client4 from '../../assets/image/portfolio/client-4.png';
-import Client5 from '../../assets/image/portfolio/client-5.png';
-import Client6 from '../../assets/image/portfolio/client-6.png';
+import Client1 from '../../assets/image/portfolio/client-1.png'
+import Client2 from '../../assets/image/portfolio/client-2.png'
+import Client3 from '../../assets/image/portfolio/client-3.png'
+import Client4 from '../../assets/image/portfolio/client-4.png'
+import Client5 from '../../assets/image/portfolio/client-5.png'
+import Client6 from '../../assets/image/portfolio/client-6.png'
 
-import Reviewer1 from '../../assets/image/portfolio/client-avatar-1.jpg';
-import Reviewer2 from '../../assets/image/portfolio/client-avatar-2.jpg';
-import Reviewer3 from '../../assets/image/portfolio/client-avatar-3.jpg';
+import Reviewer1 from '../../assets/image/portfolio/client-avatar-1.jpg'
+import Reviewer2 from '../../assets/image/portfolio/client-avatar-2.jpg'
+import Reviewer3 from '../../assets/image/portfolio/client-avatar-3.jpg'
 
 export const SOCIAL_PROFILES = [
   {
@@ -57,7 +57,7 @@ export const SOCIAL_PROFILES = [
     icon: socialGoogleplusOutline,
     url: '#',
   },
-];
+]
 
 export const MENU_ITEMS = [
   {
@@ -80,7 +80,7 @@ export const MENU_ITEMS = [
     path: '#process_section',
     offset: '0',
   },
-];
+]
 
 export const AWARDS = [
   {
@@ -115,7 +115,7 @@ export const AWARDS = [
     awardeeName: 'Awardee',
     date: 'The Jury 2018',
   },
-];
+]
 
 export const PORTFOLIO_SHOWCASE = [
   {
@@ -373,7 +373,7 @@ export const PORTFOLIO_SHOWCASE = [
       },
     ],
   },
-];
+]
 
 export const PROCESS_STEPS = [
   {
@@ -394,7 +394,7 @@ export const PROCESS_STEPS = [
     description:
       'With our scrum-based agile methodology, you’ll receive iterative builds every two weeks, which gives you ',
   },
-];
+]
 
 export const SERVICE_LIST = [
   {
@@ -466,7 +466,7 @@ export const SERVICE_LIST = [
       },
     ],
   },
-];
+]
 
 export const SKILLS = [
   {
@@ -497,7 +497,7 @@ export const SKILLS = [
     icon: SkillIcon4,
     successRate: '70',
   },
-];
+]
 
 export const CLIENTS = [
   {
@@ -524,13 +524,12 @@ export const CLIENTS = [
     image: Client6,
     title: 'Google',
   },
-];
+]
 
 export const TESTIMONIAL = [
   {
     image: Reviewer1,
-    review:
-      'Another quality React-based product from RedQ Team. Manage to turn highly complex tech into simple components.',
+    review: 'Estatico',
     name: 'Jon Doe',
     designation: 'Founder & CEO',
     twitterProfile: 'https://twitter.com/redqinc',
@@ -539,8 +538,7 @@ export const TESTIMONIAL = [
   },
   {
     image: Reviewer2,
-    review:
-      'Another quality React-based product from RedQ Team. Manage to turn highly complex tech into simple components.',
+    review: 'Gatsby Js with theme-ui',
     name: 'Jeny Doe',
     designation: 'Co-Founder & CTO',
     twitterProfile: 'https://twitter.com/redqinc',
@@ -549,15 +547,14 @@ export const TESTIMONIAL = [
   },
   {
     image: Reviewer3,
-    review:
-      'Another quality React-based product from RedQ Team. Manage to turn highly complex tech into simple components.',
+    review: 'gatsby js + chakra ui',
     name: 'Jon Doe',
     designation: 'Co-Founder & COO',
     twitterProfile: 'https://twitter.com/redqinc',
     organization: '@Tonquin',
     organizationURL: 'https://redq.io/',
   },
-];
+]
 
 export const FOOTER_MENU = [
   {
@@ -572,4 +569,4 @@ export const FOOTER_MENU = [
     label: 'Cookie Policy',
     path: '#',
   },
-];
+]

@@ -332,7 +332,7 @@ export const PrevButton = styled.div`
   span {
     width: 18px;
     height: 2px;
-    background: #d1d3de;
+    background: ${themeGet('colors.secondary')};
     display: block;
     position: relative;
     transition: 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
@@ -375,7 +375,7 @@ export const NextButton = styled.div`
   span {
     width: 18px;
     height: 2px;
-    background: #d1d3de;
+    background: ${themeGet('colors.secondary')};
     display: block;
     position: relative;
     transition: 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);

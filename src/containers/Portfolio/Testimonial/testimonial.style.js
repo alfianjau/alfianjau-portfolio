@@ -32,6 +32,7 @@ export const TestimonialItem = styled.div`
   border-radius: 10px;
   padding: 30px;
   box-shadow: 0.521px 2.954px 20px 0px rgba(101, 106, 160, 0.1);
+  width: 100%;
 
   .reviewer_org {
     font-size: 14px;

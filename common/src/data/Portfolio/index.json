@@ -473,7 +473,7 @@
   "TESTIMONIAL": [
     {
       "image": "../../assets/image/portfolio/client-avatar-1.jpg",
-      "review": "Another quality React-based product from RedQ Team. Manage to turn highly complex tech into simple components.",
+      "review": "Gatsby JS + ChakraUI",
       "name": "Jon Doe",
       "designation": "Founder & CEO",
       "twitterProfile": "https://twitter.com/redqinc",
@@ -482,7 +482,7 @@
     },
     {
       "image": "../../assets/image/portfolio/client-avatar-2.jpg",
-      "review": "Another quality React-based product from RedQ Team. Manage to turn highly complex tech into simple components.",
+      "review": "Gatsby JS + TailwindCSS",
       "name": "Jeny Doe",
       "designation": "Co-Founder & CTO",
       "twitterProfile": "https://twitter.com/redqinc",
@@ -491,7 +491,7 @@
     },
     {
       "image": "../../assets/image/portfolio/client-avatar-3.jpg",
-      "review": "Another quality React-based product from Alfianjau. Manage to turn highly complex tech into simple components.",
+      "review": "Gatsby CSS + Theme UI",
       "name": "Jon Doe",
       "designation": "Co-Founder & COO",
       "twitterProfile": "https://twitter.com/alfianjau",

@@ -14,6 +14,9 @@ export const TestimonialWrapper = styled.div`
     top: -115px;
     right: 0;
     z-index: 1;
+    & span {
+      background-color: ${themeGet('colors.primary')};
+    }
     @media (max-width: 767px) {
       top: -60px;
       left: 0;

@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
-import { magic } from 'react-icons-kit/fa/magic'
 import NavbarWrapper from '../../../../common/src/components/Navbar'
 import Drawer from '../../../../common/src/components/Drawer'
 import Button from '../../../../common/src/components/Button'
@@ -13,7 +12,6 @@ import { DrawerContext } from '../../../../common/src/contexts/DrawerContext'
 import ScrollSpyMenu from '../../../../common/src/components/ScrollSpyMenu'
 import { themeGet } from 'styled-system'
 import LogoImage from '../../../../common/src/assets/image/portfolio/avatar.png'
-import LogoImageAlt from '../../../../common/src/assets/image/portfolio/avatar.png'
 
 const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
   const Data = useStaticQuery(graphql`
@@ -50,7 +48,7 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
           />
           <Logo
             href="/"
-            logoSrc={LogoImageAlt}
+            logoSrc={LogoImage}
             title="Portfolio"
             logoStyle={logoStyle}
             className="logo-alt"

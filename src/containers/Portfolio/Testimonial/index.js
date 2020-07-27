@@ -71,7 +71,7 @@ const TestimonialSection = ({
 
   return (
     <Box {...sectionWrapper} as="section">
-      <Container noGutter mobileGutter display="flex">
+      <Container fullWidth noGutter display="flex">
         <Box {...secTitleWrapper}>
           <Heading {...secTitle} content="Public Repositories" />
           <Text {...secDescription} content="Some of my Github projects" />

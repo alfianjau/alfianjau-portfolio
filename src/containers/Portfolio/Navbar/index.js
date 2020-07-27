@@ -11,7 +11,7 @@ import Container from '../../../../common/src/components/UI/Container'
 import { DrawerContext } from '../../../../common/src/contexts/DrawerContext'
 import ScrollSpyMenu from '../../../../common/src/components/ScrollSpyMenu'
 import { themeGet } from 'styled-system'
-import LogoImage from '../../../../common/src/assets/image/portfolio/avatar.png'
+import LogoImage from '../../../../static/images/avatar.png'
 
 const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
   const Data = useStaticQuery(graphql`

@@ -2,6 +2,7 @@ import { socialTwitter } from 'react-icons-kit/ionicons/socialTwitter'
 import { socialFacebook } from 'react-icons-kit/ionicons/socialFacebook'
 import { socialDribbbleOutline } from 'react-icons-kit/ionicons/socialDribbbleOutline'
 import { socialGithub } from 'react-icons-kit/ionicons/socialGithub'
+import { socialLinkedinOutline } from 'react-icons-kit/ionicons/socialLinkedinOutline'
 import { socialGoogleplusOutline } from 'react-icons-kit/ionicons/socialGoogleplusOutline'
 
 import Awardee1 from '../../assets/image/portfolio/awardee-1.png'
@@ -39,19 +40,23 @@ import Reviewer3 from '../../assets/image/portfolio/client-avatar-3.jpg'
 export const SOCIAL_PROFILES = [
   {
     icon: socialTwitter,
-    url: '#',
+    url: 'https://twitter.com/alfian_jau',
   },
   {
     icon: socialFacebook,
-    url: '#',
+    url: 'https://www.facebook.com/alfian.jauhari',
   },
   {
     icon: socialDribbbleOutline,
-    url: '#',
+    url: 'https://dribbble.com/alfianjau/',
+  },
+  {
+    icon: socialLinkedinOutline,
+    url: 'https://www.linkedin.com/in/alfianjau/',
   },
   {
     icon: socialGithub,
-    url: '#',
+    url: 'https://github.com/alfianjau/',
   },
   {
     icon: socialGoogleplusOutline,
@@ -61,8 +66,8 @@ export const SOCIAL_PROFILES = [
 
 export const MENU_ITEMS = [
   {
-    label: 'ME',
-    path: '#banner_section',
+    label: 'HOME',
+    path: '',
     offset: '0',
   },
   {

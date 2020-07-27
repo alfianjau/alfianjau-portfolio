@@ -1,0 +1,35 @@
+/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 27/07/2020 13:09
+  	*/
+
+@font-face {
+  font-family: 'Flaticon_custom';
+  src: url('../fonts/Flaticon_custom.eot');
+  src: url('../fonts/Flaticon_custom.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Flaticon_custom.woff2') format('woff2'),
+    url('../fonts/Flaticon_custom.woff') format('woff'),
+    url('../fonts/Flaticon_custom.ttf') format('truetype'),
+    url('../fonts/Flaticon_custom.svg#Flaticon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: 'Flaticon_custom';
+    src: url('../fonts/Flaticon_custom.svg#Flaticon') format('svg');
+  }
+}
+
+[class^='customFlaticon-']:before,
+[class*=' customFlaticon-']:before,
+[class^='customFlaticon-']:after,
+[class*=' customFlaticon-']:after {
+  font-family: Flaticon_custom;
+  font-style: normal;
+}
+
+.flaticon-linkedin:before {
+  content: '\f12d';
+}

@@ -2,25 +2,29 @@
   "SOCIAL_PROFILES": [
     {
       "icon": "flaticon-facebook-logo",
-      "url": "#"
+      "url": "https://www.facebook.com/alfian.jauhari"
     },
     {
       "icon": "flaticon-twitter-logo-silhouette",
-      "url": "#"
+      "url": "https://twitter.com/alfian_jau"
     },
     {
-      "icon": "flaticon-instagram",
-      "url": "#"
+      "icon": "flaticon-code",
+      "url": "https://github.com/alfianjau/"
     },
     {
       "icon": "flaticon-dribble-logo",
-      "url": "#"
+      "url": "https://dribbble.com/alfianjau/"
+    },
+    {
+      "icon": "flaticon-conversation",
+      "url": "https://www.linkedin.com/in/alfianjau/"
     }
   ],
   "MENU_ITEMS": [
     {
-      "label": "ME",
-      "path": "/#banner_section",
+      "label": "HOME",
+      "path": "/",
       "offset": "0"
     },
     {
@@ -473,28 +477,28 @@
   "TESTIMONIAL": [
     {
       "image": "../../assets/image/portfolio/client-avatar-1.jpg",
-      "review": "Gatsby JS + ChakraUI",
+      "review": "Custom Crafted CSS",
       "name": "Jon Doe",
       "designation": "Founder & CEO",
-      "twitterProfile": "https://twitter.com/redqinc",
-      "organization": "@Tonquin",
-      "organizationURL": "https://redq.io/"
+      "githubLink": "https://github.com/alfianjau/alfianjau.github.io",
+      "organization": "@alfianjau",
+      "organizationURL": "https://alfianjau.com/"
     },
     {
       "image": "../../assets/image/portfolio/client-avatar-2.jpg",
       "review": "Gatsby JS + TailwindCSS",
       "name": "Jeny Doe",
       "designation": "Co-Founder & CTO",
-      "twitterProfile": "https://twitter.com/redqinc",
-      "organization": "@Tonquin",
-      "organizationURL": "https://redq.io/"
+      "githubLink": "https://github.com/hakooi/gatsby-compact-template",
+      "organization": "@alfianjau",
+      "organizationURL": "https://alfianjau.com/"
     },
     {
       "image": "../../assets/image/portfolio/client-avatar-3.jpg",
-      "review": "Gatsby CSS + Theme UI",
+      "review": "Gatsby JS + Theme UI + TailwindCSS",
       "name": "Jon Doe",
       "designation": "Co-Founder & COO",
-      "twitterProfile": "https://twitter.com/alfianjau",
+      "githubLink": "https://github.com/alfianjau/gatsby-elegance-template",
       "organization": "@alfianjau",
       "organizationURL": "https://alfianjau.com/"
     }

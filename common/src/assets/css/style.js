@@ -1,5 +1,6 @@
-import { createGlobalStyle } from 'styled-components';
-import './flaticon.css';
+import { createGlobalStyle } from 'styled-components'
+import './flaticon.css'
+// import './flaticon_custom.css'
 
 export const ResetCSS = createGlobalStyle`
   ::selection {
@@ -117,4 +118,4 @@ export const ResetCSS = createGlobalStyle`
       }
     }
   }
-`;
+`

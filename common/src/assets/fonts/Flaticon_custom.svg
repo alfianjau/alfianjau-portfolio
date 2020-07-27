@@ -1,0 +1,36 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2020-7-27: Created with FontForge (http://fontforge.org)
+-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<metadata>
+Created by FontForge 20170731 at Mon Jul 27 13:09:31 2020
+ By root
+
+</metadata>
+<defs>
+<font id="Flaticon" horiz-adv-x="200" >
+  <font-face
+    font-family="Flaticon_custom"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="512"
+    panose-1="2 0 5 3 0 0 0 0 0 0"
+    ascent="448"
+    descent="-64"
+    bbox="0 -64 512 448"
+    underline-thickness="25.6"
+    underline-position="-51.2"
+    unicode-range="U+0020-F100"
+  />
+    <missing-glyph />
+    <glyph glyph-name="space" unicode=" "
+ />
+    <glyph glyph-name="001-linkedin" unicode="&#xf100;" horiz-adv-x="512"
+d="M160.008 25h-70v226h70v-226zM166.992 323.004c0 -22.6367 -18.3594 -41.0039 -40.9766 -41.0039c-22.7031 0 -41.0156 18.3672 -41.0156 41.0039c0 22.6289 18.3125 40.9961 41.0156 40.9961c22.6172 0 40.9766 -18.3672 40.9766 -40.9961zM422 149.336v-124.336h-69
+v110.344c0 26.1172 -1.16406 59.7227 -37.0938 59.7227c-36.4258 0 -43.9062 -28.4688 -43.9062 -57.8555v-112.211h-68v226h68v-30.7422h0.0664062c9.33203 17.7109 32.1914 34.7422 66.2461 34.7422c70.8711 0 83.6875 -44.9961 83.6875 -105.664zM512 -4
+c0 -33.0859 -26.9141 -60 -60 -60h-392c-33.0859 0 -60 26.9141 -60 60v392c0 33.0859 26.9141 60 60 60h392c33.0859 0 60 -26.9141 60 -60v-392zM452 408h-392c-11.0273 0 -20 -8.97266 -20 -20v-392c0 -11.0273 8.97266 -20 20 -20h392c11.0273 0 20 8.97266 20 20v392
+c0 11.0273 -8.97266 20 -20 20zM452 408z" />
+  </font>
+</defs></svg>

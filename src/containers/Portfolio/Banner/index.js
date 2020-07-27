@@ -41,19 +41,17 @@ const BannerSection = ({
       <Container noGutter mobileGutter width="1200px">
         <Box {...row}>
           <Box {...contentArea}>
-            <Heading content="Hello, I’m" {...greetingStyle} />
             <Heading content="Muhammad Alfian Jauhari" {...nameStyle} />
-            <Heading content="Full Stack Designer" {...designationStyle} />
             <Box {...roleWrapper}>
               <Icon
                 icon={cornerDownRight}
                 style={{ color: colors.primary }}
                 size={22}
               />
-              <Heading content="Freelance Frontend Developer" {...roleStyle} />
+              <Heading content="Fullstack Designer" {...roleStyle} />
             </Box>
             <Text
-              content="5 years experience on Frontend development"
+              content="Front-end developer who Aim to become creative coder whom can bend the web with interactive magic ways and colorful "
               {...aboutStyle}
             />
             <SocialProfile items={Data.portfolioJson.SOCIAL_PROFILES} />
@@ -87,7 +85,7 @@ BannerSection.defaultProps = {
     alignItems: 'stretch',
   },
   contentArea: {
-    width: ['100%', '100%', '50%', '50%'],
+    width: ['100%', '100%', '50%', '60%'],
     p: ['65px 0 80px 0', '65px 0 80px 0', '80px 0 60px 0', '0'],
     flexBox: true,
     flexWrap: 'wrap',
@@ -95,10 +93,10 @@ BannerSection.defaultProps = {
     flexDirection: 'column',
   },
   imageArea: {
-    width: ['100%', '100%', '50%', '50%'],
+    width: ['100%', '100%', '50%', '40%'],
     flexBox: true,
     flexDirection: 'column',
-    alignItems: 'center',
+    alignItems: 'flex-end',
     justifyContent: 'center',
   },
   greetingStyle: {
@@ -111,7 +109,7 @@ BannerSection.defaultProps = {
   nameStyle: {
     as: 'h2',
     color: '#fff',
-    fontSize: ['38px', '38px', '44px', '60px', '80px'],
+    fontSize: ['38px', '38px', '44px', '5rem', '3rem'],
     fontWeight: '800',
     mb: '6px',
   },

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {themeGet} from 'styled-system'
 
 export const SkillItem = styled.div`
   position: relative;
@@ -60,7 +61,7 @@ export const SuccessRate = styled.div`
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #407fff;
+    background-color: ${themeGet('colors.primary')};
     overflow: hidden;
     line-height: 18px;
     text-align: center;

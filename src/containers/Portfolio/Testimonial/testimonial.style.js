@@ -11,7 +11,7 @@ export const TestimonialWrapper = styled.div`
   }
   .glide__controls {
     position: absolute;
-    top: -115px;
+    top: -4rem;
     right: 0;
     z-index: 1;
     & span {
@@ -53,7 +53,7 @@ export const TestimonialHead = styled.div`
     color: #d6d7e2;
     transition: 0.15s ease-in-out;
     &:hover {
-      color: #38a1f3;
+      color: ${themeGet('colors.primary')};
     }
   }
 `

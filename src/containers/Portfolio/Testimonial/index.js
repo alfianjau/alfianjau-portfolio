@@ -16,7 +16,7 @@ import {
   TestimonialHead,
   TestimonialThumb,
 } from './testimonial.style'
-import { twitter } from 'react-icons-kit/icomoon/twitter'
+import { github } from 'react-icons-kit/icomoon/github'
 
 const TestimonialSection = ({
   sectionWrapper,
@@ -36,7 +36,7 @@ const TestimonialSection = ({
           review
           organization
           organizationURL
-          twitterProfile
+          githubLink
           image {
             childImageSharp {
               fluid(quality: 100) {
@@ -74,7 +74,6 @@ const TestimonialSection = ({
       <Container fullWidth noGutter display="flex">
         <Box {...secTitleWrapper}>
           <Heading {...secTitle} content="Public Repositories" />
-          <Text {...secDescription} content="Some of my Github projects" />
         </Box>
         <TestimonialWrapper>
           <GlideCarousel
@@ -96,17 +95,12 @@ const TestimonialSection = ({
                 <GlideSlide key={`testimonial-item-${index}`}>
                   <TestimonialItem>
                     <TestimonialHead>
-                      <TestimonialThumb>
-                        <Image
-                          fluid={item.image.childImageSharp.fluid}
-                          alt={`testimonial-avatar-${index + 1}`}
-                        />
-                      </TestimonialThumb>
-                      <a href={item.twitterProfile || '#'} aria-label="twitter">
-                        <Icon icon={twitter} size={24} />
+                      <Text {...reviewStyle} content={item.review} />
+                      <a href={item.githubLink || '#'} aria-label="github">
+                        <Icon icon={github} size={24} />
                       </a>
                     </TestimonialHead>
-                    <Text {...reviewStyle} content={item.review} />
+
                     <Heading as="h3" content={item.name} {...nameStyle} />
                     <Text
                       as="span"
@@ -146,12 +140,12 @@ TestimonialSection.defaultProps = {
     pb: '1rem',
   },
   secTitleWrapper: {
-    mb: ['90px', '90px', '50px', '50px', '50px'],
+    mb: ['90px', '90px', '50px', '0', '0'],
   },
   secTitle: {
     fontSize: ['22px', '26px', '26px', '30px', '30px'],
     fontWeight: '700',
-    color: '#302b4e',
+    color: 'white',
     lineHeight: '1.34',
     mb: ['15px', '18px', '18px', '20px', '20px'],
   },

@@ -8,9 +8,19 @@ const BannerWrapper = styled.section`
   /* margin-top: -8rem; */
   display: flex;
   /* align-items: flex-end; */
+
   @media (min-width: 991px) {
     min-height: 100vh;
   }
+
+  .banner__wrapper{
+    @media (max-width: 767px) {
+  /* Mobile custom breakpoint */
+    width: 100%;
+    }
+  }
+
+
 
   .image_area {
     @media (max-width: 767px) {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import Image from 'gatsby-image'
+// import Image from 'gatsby-image'
 import PropTypes from 'prop-types'
 import { Icon } from 'react-icons-kit'
 import Box from '../../../../common/src/components/Box'
@@ -14,7 +14,7 @@ import {
   TestimonialWrapper,
   TestimonialItem,
   TestimonialHead,
-  TestimonialThumb,
+  // TestimonialThumb,
 } from './testimonial.style'
 import { github } from 'react-icons-kit/icomoon/github'
 
@@ -58,7 +58,7 @@ const TestimonialSection = ({
     animationDuration: 800,
     breakpoints: {
       990: {
-        perView: 2,
+        perView: 1,
       },
       767: {
         perView: 1,

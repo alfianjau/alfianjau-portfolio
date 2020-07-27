@@ -38,7 +38,7 @@ const BannerSection = ({
 
   return (
     <BannerWrapper id="banner_section">
-      <Container noGutter mobileGutter width="1200px">
+      <Container className="banner__wrapper" noGutter mobileGutter width="1200px">
         <Box {...row}>
           <Box {...contentArea}>
             <Heading content="Muhammad Alfian Jauhari" {...nameStyle} />
@@ -86,7 +86,7 @@ BannerSection.defaultProps = {
   },
   contentArea: {
     width: ['100%', '100%', '50%', '60%'],
-    p: ['65px 0 80px 0', '65px 0 80px 0', '80px 0 60px 0', '0'],
+    p: ['3rem 0 2rem 0', '3rem 0 2rem 0', '80px 0 60px 0', '0'],
     flexBox: true,
     flexWrap: 'wrap',
     justifyContent: 'center',

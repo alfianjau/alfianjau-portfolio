@@ -21,11 +21,12 @@ const Root = styled.div`
 `
 
 const Main = styled.div`
-  padding-top: 8rem;
+  padding-top: 6rem;
+  font-family: ${props => props.theme.fonts.body};
 `
 
 const Layout = props => {
-  function handleFirstTab(e) {
+  function handleFirstTab (e) {
     if (e.keyCode === 9) {
       document.body.classList.add('user-is-tabbing')
     }

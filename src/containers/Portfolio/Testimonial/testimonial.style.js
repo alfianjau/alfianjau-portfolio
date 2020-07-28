@@ -47,8 +47,8 @@ export const TestimonialItem = styled.div`
 export const TestimonialHead = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
-
+  /* margin-bottom: 25px; */
+  min-height: 4rem;
   a {
     color: #d6d7e2;
     transition: 0.15s ease-in-out;

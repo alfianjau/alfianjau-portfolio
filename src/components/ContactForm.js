@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from '@emotion/styled'
+import Input from '../../common/src/components/Input'
 
 /*
   ⚠️ This is an example of a contact form powered with Netlify form handling.
@@ -187,7 +188,7 @@ class ContactForm extends React.Component {
     this.setState({ showModal: false })
   }
 
-  render() {
+  render () {
     return (
       <Form
         name="contact"

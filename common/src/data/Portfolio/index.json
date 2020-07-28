@@ -1,6 +1,5 @@
 {
-  "SOCIAL_PROFILES": [
-    {
+  "SOCIAL_PROFILES": [{
       "icon": "flaticon-facebook-logo",
       "url": "https://www.facebook.com/alfian.jauhari"
     },
@@ -21,8 +20,7 @@
       "url": "https://www.linkedin.com/in/alfianjau/"
     }
   ],
-  "MENU_ITEMS": [
-    {
+  "MENU_ITEMS": [{
       "label": "HOME",
       "path": "/",
       "offset": "0"
@@ -53,8 +51,7 @@
       "offset": "0"
     }
   ],
-  "AWARDS": [
-    {
+  "AWARDS": [{
       "awardLogo": "../../assets/image/portfolio/award-1.png",
       "awardName": "Free Software Advice",
       "awardDetails": "Top Rated App Development Companies USA",
@@ -87,11 +84,9 @@
       "date": "The Jury 2018"
     }
   ],
-  "PORTFOLIO_SHOWCASE": [
-    {
+  "PORTFOLIO_SHOWCASE": [{
       "title": "DESIGN",
-      "portfolioItem": [
-        {
+      "portfolioItem": [{
           "title": "Persib",
           "description": "An effective and immersive user experience is what catches the attention and spreads a clear message. That's why we attach great importance to the fact that ergonomics serves the design, and that this design is innovative and neat.",
           "image": "../../assets/image/portfolio/portfolio-1.jpg",
@@ -101,8 +96,7 @@
           "view": "4.5K",
           "love": "1.5K",
           "feedback": "1.2K",
-          "buildWith": [
-            {
+          "buildWith": [{
               "content": "React JS"
             },
             {
@@ -123,8 +117,7 @@
           "view": "8.5K",
           "love": "5.5K",
           "feedback": "3.2K",
-          "buildWith": [
-            {
+          "buildWith": [{
               "content": "React Native"
             },
             {
@@ -139,8 +132,7 @@
     },
     {
       "title": "DEVELOPMENT",
-      "portfolioItem": [
-        {
+      "portfolioItem": [{
           "title": "Liga Indonesia",
           "description": "An effective and immersive user experience is what catches the attention and spreads a clear message. That's why we attach great importance to the fact that ergonomics serves the design, and that this design is innovative and neat.",
           "image": "../../assets/image/portfolio/portfolio-1.jpg",
@@ -150,8 +142,7 @@
           "view": "4.5K",
           "love": "1.5K",
           "feedback": "1.2K",
-          "buildWith": [
-            {
+          "buildWith": [{
               "content": "React JS"
             },
             {
@@ -172,8 +163,7 @@
           "view": "8.5K",
           "love": "5.5K",
           "feedback": "3.2K",
-          "buildWith": [
-            {
+          "buildWith": [{
               "content": "React Native"
             },
             {
@@ -188,8 +178,7 @@
     },
     {
       "title": "ANIMATION",
-      "portfolioItem": [
-        {
+      "portfolioItem": [{
           "title": "Some NDA Projects",
           "description": "An effective and immersive user experience is what catches the attention and spreads a clear message. That's why we attach great importance to the fact that ergonomics serves the design, and that this design is innovative and neat.",
           "image": "../../assets/image/portfolio/portfolio-1.jpg",
@@ -199,8 +188,7 @@
           "view": "4.5K",
           "love": "1.5K",
           "feedback": "1.2K",
-          "buildWith": [
-            {
+          "buildWith": [{
               "content": "React JS"
             },
             {
@@ -221,8 +209,7 @@
           "view": "8.5K",
           "love": "5.5K",
           "feedback": "3.2K",
-          "buildWith": [
-            {
+          "buildWith": [{
               "content": "React Native"
             },
             {
@@ -237,8 +224,7 @@
     },
     {
       "title": "TV ADVERTISEMENT",
-      "portfolioItem": [
-        {
+      "portfolioItem": [{
           "title": "Canada Media Site",
           "description": "An effective and immersive user experience is what catches the attention and spreads a clear message. That's why we attach great importance to the fact that ergonomics serves the design, and that this design is innovative and neat.",
           "image": "../../assets/image/portfolio/portfolio-1.jpg",
@@ -248,8 +234,7 @@
           "view": "4.5K",
           "love": "1.5K",
           "feedback": "1.2K",
-          "buildWith": [
-            {
+          "buildWith": [{
               "content": "React JS"
             },
             {
@@ -270,8 +255,7 @@
           "view": "8.5K",
           "love": "5.5K",
           "feedback": "3.2K",
-          "buildWith": [
-            {
+          "buildWith": [{
               "content": "React Native"
             },
             {
@@ -286,8 +270,7 @@
     },
     {
       "title": "MARKETING",
-      "portfolioItem": [
-        {
+      "portfolioItem": [{
           "title": "Canada Media Site",
           "description": "An effective and immersive user experience is what catches the attention and spreads a clear message. That's why we attach great importance to the fact that ergonomics serves the design, and that this design is innovative and neat.",
           "image": "../../assets/image/portfolio/portfolio-1.jpg",
@@ -297,8 +280,7 @@
           "view": "4.5K",
           "love": "1.5K",
           "feedback": "1.2K",
-          "buildWith": [
-            {
+          "buildWith": [{
               "content": "React JS"
             },
             {
@@ -319,8 +301,7 @@
           "view": "8.5K",
           "love": "5.5K",
           "feedback": "3.2K",
-          "buildWith": [
-            {
+          "buildWith": [{
               "content": "React Native"
             },
             {
@@ -334,8 +315,7 @@
       ]
     }
   ],
-  "PROCESS_STEPS": [
-    {
+  "PROCESS_STEPS": [{
       "image": "../../assets/image/portfolio/step-1.png",
       "title": "1. Research",
       "description": "We work with you to understand user’s stories and validate your idea with real users using lean design sprints."
@@ -351,11 +331,9 @@
       "description": "With our scrum-based agile methodology, you’ll receive iterative builds every two weeks, which gives you "
     }
   ],
-  "SERVICE_LIST": [
-    {
+  "SERVICE_LIST": [{
       "title": "UI/UX Design",
-      "listItems": [
-        {
+      "listItems": [{
           "content": "Design Sprints"
         },
         {
@@ -377,8 +355,7 @@
     },
     {
       "title": "Web Development",
-      "listItems": [
-        {
+      "listItems": [{
           "content": "ReactJS"
         },
         {
@@ -400,8 +377,7 @@
     },
     {
       "title": "Mobile App Development",
-      "listItems": [
-        {
+      "listItems": [{
           "content": "iOS"
         },
         {
@@ -422,8 +398,7 @@
       ]
     }
   ],
-  "SKILLS": [
-    {
+  "SKILLS": [{
       "title": "Graphic Design",
       "description": "Aristotle maintained the sharp distinction between science and the practical",
       "icon": "../../assets/image/portfolio/skill-1.svg",
@@ -448,8 +423,7 @@
       "successRate": "70"
     }
   ],
-  "CLIENTS": [
-    {
+  "CLIENTS": [{
       "image": "../../assets/image/portfolio/client-1.png",
       "title": "Microsoft"
     },
@@ -474,37 +448,35 @@
       "title": "Google"
     }
   ],
-  "TESTIMONIAL": [
-    {
+  "TESTIMONIAL": [{
       "image": "../../assets/image/portfolio/client-avatar-1.jpg",
-      "review": "Custom Crafted CSS",
+      "review": "Custom Crafted Responsive Html + CSS ",
       "name": "Jon Doe",
-      "designation": "Founder & CEO",
+      "designation": "Custom crafted Html + CSS Project",
       "githubLink": "https://github.com/alfianjau/alfianjau.github.io",
       "organization": "@alfianjau",
       "organizationURL": "https://alfianjau.com/"
     },
     {
       "image": "../../assets/image/portfolio/client-avatar-2.jpg",
-      "review": "Gatsby JS + TailwindCSS",
+      "review": "Gatsby JS + Tailwind CSS ",
       "name": "Jeny Doe",
-      "designation": "Co-Founder & CTO",
+      "designation": "Experiment on GatsbyJS and Tailwind CSS",
       "githubLink": "https://github.com/hakooi/gatsby-compact-template",
       "organization": "@alfianjau",
       "organizationURL": "https://alfianjau.com/"
     },
     {
       "image": "../../assets/image/portfolio/client-avatar-3.jpg",
-      "review": "Gatsby JS + Theme UI + TailwindCSS",
+      "review": "Gatsby JS + Theme UI + Tailwind CSS",
       "name": "Jon Doe",
-      "designation": "Co-Founder & COO",
+      "designation": "Gatsby JS web with Theme ui and TailwindCSS compatible",
       "githubLink": "https://github.com/alfianjau/gatsby-elegance-template",
       "organization": "@alfianjau",
       "organizationURL": "https://alfianjau.com/"
     }
   ],
-  "FOOTER_MENU": [
-    {
+  "FOOTER_MENU": [{
       "label": "Contact",
       "path": "#"
     },

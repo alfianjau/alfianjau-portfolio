@@ -17,6 +17,7 @@ import {
   // TestimonialThumb,
 } from './testimonial.style'
 import { github } from 'react-icons-kit/icomoon/github'
+import colors from '../../../../common/src/theme/portfolio/colors'
 
 const TestimonialSection = ({
   sectionWrapper,
@@ -101,18 +102,12 @@ const TestimonialSection = ({
                       </a>
                     </TestimonialHead>
 
-                    <Heading as="h3" content={item.name} {...nameStyle} />
+                    {/* <Heading as="h3" content={item.name} {...nameStyle} /> */}
                     <Text
                       as="span"
                       content={item.designation}
                       {...designationStyle}
                     />
-                    <a
-                      href={item.organizationURL || '#'}
-                      className="reviewer_org"
-                    >
-                      {item.organization}
-                    </a>
                   </TestimonialItem>
                 </GlideSlide>
               ))}
@@ -160,9 +155,9 @@ TestimonialSection.defaultProps = {
   },
   reviewStyle: {
     fontSize: '16px',
-    color: '#43414e',
+    fontWeight: 'bold',
+    color: colors.primary,
     lineHeight: '1.5',
-    mb: '30px',
   },
   nameStyle: {
     fontSize: '16px',

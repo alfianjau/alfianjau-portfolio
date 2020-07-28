@@ -50,10 +50,10 @@ const SkillSection = ({
   `)
 
   return (
-    <Box {...sectionWrapper} as="section">
+    <Box {...sectionWrapper} as="section" id="skills_section">
       <Container noGutter mobileGutter width="1200px">
         <Box {...secTitleWrapper}>
-          <Heading {...secTitle} content="My Toolbelts" />
+          <Heading {...secTitle} content="What I could provide" />
           <Text
             {...secDescription}
             content="Take a look on some of my technological tech stack I've been used for past projects!"
@@ -179,6 +179,7 @@ SkillSection.defaultProps = {
     fontWeight: '400',
     color: '#43414e',
     lineHeight: '1.5',
+    whiteSpace: 'pre-line',
     mb: '0',
   },
   skillSuccessRate: {

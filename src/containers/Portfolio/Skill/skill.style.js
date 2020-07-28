@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {themeGet} from 'styled-system'
+import { themeGet } from 'styled-system'
 
 export const SkillItem = styled.div`
   position: relative;
@@ -11,7 +11,9 @@ export const SkillItem = styled.div`
 export const SkillDetails = styled.div`
   padding: 85px 60px 55px 60px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  min-height:23rem;
+  justify-content:space-evenly;
   @media (max-width: 1199px) {
     padding: 70px 45px 40px 45px;
   }
@@ -19,26 +21,33 @@ export const SkillDetails = styled.div`
     padding: 60px 35px 30px 35px;
   }
   @media (max-width: 575px) {
+    flex-direction:column;
+    align-items: center;
     padding: 35px 25px 20px 25px;
   }
 `;
 
 export const SkillIcon = styled.div`
-  flex: 0 0 130px;
-  max-width: 130px;
+  flex: 0 0 10rem;
+  max-width: 10rem;
+  padding:1.2rem;
   @media (max-width: 990px) {
-    flex: 0 0 55px;
-    max-width: 55px;
+    flex: 0 0 9rem;
+    max-width: 9rem;
     margin-right: 30px;
   }
   @media (max-width: 575px) {
-    flex: 0 0 45px;
-    max-width: 45px;
+    flex: 0 0 9rem;
+    max-width: 9rem;
     margin-right: 20px;
   }
 `;
 
-export const SkillAbout = styled.div``;
+export const SkillAbout = styled.div`
+  p{
+    white-space: break-spaces;
+  }
+`;
 
 export const SkillProgress = styled.div`
   padding: 20px 50px 28px 50px;

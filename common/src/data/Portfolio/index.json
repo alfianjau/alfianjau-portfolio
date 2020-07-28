@@ -32,7 +32,7 @@
     },
     {
       "label": "ABOUT",
-      "path": "/about",
+      "path": "/#skills_section",
       "offset": "0"
     },
     {
@@ -399,27 +399,27 @@
     }
   ],
   "SKILLS": [{
-      "title": "Graphic Design",
-      "description": "Aristotle maintained the sharp distinction between science and the practical",
-      "icon": "../../assets/image/portfolio/skill-1.svg",
+      "title": "Fundamental",
+      "description": "-Responsive web design \n-Grid Layout \n-Color Theory \n-Web accessibility \n-Web Typography\n-Atomic Structure\n-JAM Stack\n-SEO",
+      "icon": "../../assets/image/portfolio/fundamental.svg",
       "successRate": "90"
     },
     {
       "title": "UI/UX Design",
-      "description": "Aristotle maintained the sharp distinction between science and the practical",
-      "icon": "../../assets/image/portfolio/skill-2.svg",
+      "description": "-Wireframing \n-Design in the Browser\n-Prototype\n-Responsive layouts\n-Design System",
+      "icon": "../../assets/image/portfolio/ui.svg",
       "successRate": "85"
     },
     {
-      "title": "Web Application",
-      "description": "Aristotle maintained the sharp distinction between science and the practical",
-      "icon": "../../assets/image/portfolio/skill-3.svg",
+      "title": "Web Development",
+      "description": "-Handcrafted CSS\n-CSS Frameworks\n-VueJS\n-ReactJS\n-GraphQL\n-REST API\n-GatsbyJS",
+      "icon": "../../assets/image/portfolio/web-development.svg",
       "successRate": "80"
     },
     {
-      "title": "Mobile Application",
-      "description": "Aristotle maintained the sharp distinction between science and the practical",
-      "icon": "../../assets/image/portfolio/skill-4.svg",
+      "title": "Development Tools",
+      "description": "-Git\n-GitFlow\n-NPM package manager\n-VS Code\n-CI/CD\n-Netlify",
+      "icon": "../../assets/image/portfolio/development-tool.svg",
       "successRate": "70"
     }
   ],

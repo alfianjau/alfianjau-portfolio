@@ -20,7 +20,6 @@ import {
   MetaItem,
 } from './portfolioShowcase.style'
 import { PrevButton, NextButton } from '../portfolio.style'
-import { FiFigma } from 'react-icons/fi'
 
 const PortfolioShowcase = ({
   sectionWrapper,

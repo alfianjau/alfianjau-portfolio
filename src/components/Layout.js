@@ -21,7 +21,7 @@ const Root = styled.div`
 `
 
 const Main = styled.div`
-  padding-top: 5rem;
+  padding-top: 8rem;
   font-family: ${props => props.theme.fonts.body};
 `
 

@@ -10,6 +10,7 @@ const BannerWrapper = styled.section`
   /* align-items: flex-end; */
 
   @media (min-width: 991px) {
+    margin-top:-3rem;
     min-height: 100vh;
   }
 
@@ -17,6 +18,7 @@ const BannerWrapper = styled.section`
     @media (max-width: 767px) {
   /* Mobile custom breakpoint */
     width: 100%;
+    margin-top:-2rem;
     }
   }
 

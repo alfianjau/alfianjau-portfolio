@@ -34,7 +34,7 @@ export const TestimonialItem = styled.div`
   background-color: #fff;
   border-radius: 10px;
   padding: 30px;
-  box-shadow: 0.521px 2.954px 20px 0px rgba(101, 106, 160, 0.1);
+  box-shadow: 0.521px 2.954px 20px 0px rgb(0 169 180 / 0.9);
   width: 100%;
 
   .reviewer_org {

@@ -10,7 +10,7 @@ const BannerWrapper = styled.section`
   /* align-items: flex-end; */
 
   @media (min-width: 991px) {
-    margin-top:-3rem;
+    margin-top:-2rem;
     min-height: calc(100vh - 5rem);
   }
 

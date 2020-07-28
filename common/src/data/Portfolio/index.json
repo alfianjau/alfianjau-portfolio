@@ -26,7 +26,7 @@
       "offset": "0"
     },
     {
-      "label": "PROJECT",
+      "label": "PROJECTS",
       "path": "/#portfolio_section",
       "offset": "0"
     },
@@ -85,9 +85,9 @@
     }
   ],
   "PORTFOLIO_SHOWCASE": [{
-      "title": "DESIGN",
+      "title": "PERSIB",
       "portfolioItem": [{
-          "title": "Persib",
+          "title": "PERSIB WEB",
           "description": "An effective and immersive user experience is what catches the attention and spreads a clear message. That's why we attach great importance to the fact that ergonomics serves the design, and that this design is innovative and neat.",
           "image": "../../assets/image/portfolio/portfolio-1.jpg",
           "link": "#",
@@ -108,7 +108,7 @@
           ]
         },
         {
-          "title": "Insa",
+          "title": "PERSIB MOBILE",
           "description": "An effective and immersive user experience is what catches the attention and spreads a clear message. That's why we attach great importance to the fact that ergonomics serves the design, and that this design is innovative and neat.",
           "image": "../../assets/image/portfolio/portfolio-2.jpg",
           "link": "#",
@@ -131,9 +131,9 @@
       ]
     },
     {
-      "title": "DEVELOPMENT",
+      "title": "LIGA INDONESIA WEB",
       "portfolioItem": [{
-          "title": "Liga Indonesia",
+          "title": "Liga Indonesia webview",
           "description": "An effective and immersive user experience is what catches the attention and spreads a clear message. That's why we attach great importance to the fact that ergonomics serves the design, and that this design is innovative and neat.",
           "image": "../../assets/image/portfolio/portfolio-1.jpg",
           "link": "#",
@@ -154,7 +154,7 @@
           ]
         },
         {
-          "title": "Hakooi",
+          "title": "Liga Indonesia mobile view",
           "description": "An effective and immersive user experience is what catches the attention and spreads a clear message. That's why we attach great importance to the fact that ergonomics serves the design, and that this design is innovative and neat.",
           "image": "../../assets/image/portfolio/portfolio-2.jpg",
           "link": "#",
@@ -177,9 +177,9 @@
       ]
     },
     {
-      "title": "ANIMATION",
+      "title": "INSA",
       "portfolioItem": [{
-          "title": "Some NDA Projects",
+          "title": "INSA webview",
           "description": "An effective and immersive user experience is what catches the attention and spreads a clear message. That's why we attach great importance to the fact that ergonomics serves the design, and that this design is innovative and neat.",
           "image": "../../assets/image/portfolio/portfolio-1.jpg",
           "link": "#",
@@ -200,7 +200,7 @@
           ]
         },
         {
-          "title": "RedQ, Inc. mobile app",
+          "title": "INSA mobile view",
           "description": "An effective and immersive user experience is what catches the attention and spreads a clear message. That's why we attach great importance to the fact that ergonomics serves the design, and that this design is innovative and neat.",
           "image": "../../assets/image/portfolio/portfolio-2.jpg",
           "link": "#",
@@ -223,9 +223,9 @@
       ]
     },
     {
-      "title": "TV ADVERTISEMENT",
+      "title": "HAKOOI",
       "portfolioItem": [{
-          "title": "Canada Media Site",
+          "title": "HAKOOI Site PWA",
           "description": "An effective and immersive user experience is what catches the attention and spreads a clear message. That's why we attach great importance to the fact that ergonomics serves the design, and that this design is innovative and neat.",
           "image": "../../assets/image/portfolio/portfolio-1.jpg",
           "link": "#",
@@ -246,7 +246,7 @@
           ]
         },
         {
-          "title": "RedQ, Inc. mobile app",
+          "title": "HAKOOI mobile view",
           "description": "An effective and immersive user experience is what catches the attention and spreads a clear message. That's why we attach great importance to the fact that ergonomics serves the design, and that this design is innovative and neat.",
           "image": "../../assets/image/portfolio/portfolio-2.jpg",
           "link": "#",
@@ -269,7 +269,7 @@
       ]
     },
     {
-      "title": "MARKETING",
+      "title": "Some NDA PROJECTS",
       "portfolioItem": [{
           "title": "Canada Media Site",
           "description": "An effective and immersive user experience is what catches the attention and spreads a clear message. That's why we attach great importance to the fact that ergonomics serves the design, and that this design is innovative and neat.",

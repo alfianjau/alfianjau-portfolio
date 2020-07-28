@@ -175,7 +175,7 @@ export const PORTFOLIO_SHOWCASE = [
     ],
   },
   {
-    title: 'DEVELOPMENT',
+    title: 'PERSIB',
     portfolioItem: [
       {
         title: 'Canada Media Site',

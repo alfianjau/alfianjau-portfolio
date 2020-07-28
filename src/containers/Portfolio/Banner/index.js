@@ -51,7 +51,7 @@ const BannerSection = ({
               <Heading content="Fullstack Designer" {...roleStyle} />
             </Box>
             <Text
-              content="Front-end developer who Aim to become creative coder whom can bend the web with interactive magic ways and colorful "
+              content="Front-end developer who Aim to become creative coder whom can bend the web with interactive magic ways and colors"
               {...aboutStyle}
             />
             <SocialProfile items={Data.portfolioJson.SOCIAL_PROFILES} />

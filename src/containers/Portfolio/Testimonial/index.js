@@ -59,7 +59,7 @@ const TestimonialSection = ({
     animationDuration: 800,
     breakpoints: {
       990: {
-        perView: 1,
+        perView: 2,
       },
       767: {
         perView: 1,

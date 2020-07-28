@@ -20,6 +20,7 @@ import {
   MetaItem,
 } from './portfolioShowcase.style'
 import { PrevButton, NextButton } from '../portfolio.style'
+import { FiFigma } from 'react-icons/fi'
 
 const PortfolioShowcase = ({
   sectionWrapper,
@@ -70,10 +71,10 @@ const PortfolioShowcase = ({
     <Box {...sectionWrapper} as="section" id="portfolio_section">
       <Container noGutter mobileGutter width="1200px">
         <Box {...secTitleWrapper}>
-          <Heading {...secTitle} content="Making Ideas Come to Life !" />
+          <Heading {...secTitle} content="Some of my past projects worked with great teams" />
           <Text
             {...secDescription}
-            content="Year after year, Blue Label Labs has been recognized as one of the top design and development firms in New York City. It’s nice to feel appreciated!"
+            content="For past years"
           />
         </Box>
 
@@ -144,50 +145,50 @@ const PortfolioShowcase = ({
                                 ))}
                               </BuiltWith>
                             ) : (
-                              ''
-                            )}
+                                ''
+                              )}
                           </Box>
 
                           {portfolioItem.featuredIn ||
-                          portfolioItem.view ||
-                          portfolioItem.love ||
-                          portfolioItem.feedback ? (
-                            <PortfolioMeta>
-                              {portfolioItem.featuredIn ? (
-                                <MetaItem className="meta_featured">
-                                  FEATURED IN
-                                  <a href={portfolioItem.featuredLink || '#'}>
-                                    {portfolioItem.featuredIn}
-                                  </a>
-                                </MetaItem>
-                              ) : (
-                                ''
-                              )}
-                              {portfolioItem.view ? (
-                                <MetaItem>
-                                  <b>{portfolioItem.view}</b> View
-                                </MetaItem>
-                              ) : (
-                                ''
-                              )}
-                              {portfolioItem.love ? (
-                                <MetaItem>
-                                  <b>{portfolioItem.love}</b> Love
-                                </MetaItem>
-                              ) : (
-                                ''
-                              )}
-                              {portfolioItem.feedback ? (
-                                <MetaItem>
-                                  <b>{portfolioItem.feedback}</b> Feedback
-                                </MetaItem>
-                              ) : (
-                                ''
-                              )}
-                            </PortfolioMeta>
-                          ) : (
-                            ''
-                          )}
+                            portfolioItem.view ||
+                            portfolioItem.love ||
+                            portfolioItem.feedback ? (
+                              <PortfolioMeta>
+                                {portfolioItem.featuredIn ? (
+                                  <MetaItem className="meta_featured">
+                                    FEATURED IN
+                                    <a href={portfolioItem.featuredLink || '#'}>
+                                      {portfolioItem.featuredIn}
+                                    </a>
+                                  </MetaItem>
+                                ) : (
+                                    ''
+                                  )}
+                                {portfolioItem.view ? (
+                                  <MetaItem>
+                                    <b>{portfolioItem.view}</b> View
+                                  </MetaItem>
+                                ) : (
+                                    ''
+                                  )}
+                                {portfolioItem.love ? (
+                                  <MetaItem>
+                                    <b>{portfolioItem.love}</b> Love
+                                  </MetaItem>
+                                ) : (
+                                    ''
+                                  )}
+                                {portfolioItem.feedback ? (
+                                  <MetaItem>
+                                    <b>{portfolioItem.feedback}</b> Feedback
+                                  </MetaItem>
+                                ) : (
+                                    ''
+                                  )}
+                              </PortfolioMeta>
+                            ) : (
+                              ''
+                            )}
                         </PortfolioShowcaseItem>
                       </GlideSlide>
                     ))}

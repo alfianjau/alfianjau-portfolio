@@ -5,6 +5,10 @@ export const SocialProfileWrapper = styled.div`
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+
+  @media (max-width: 767px) {
+  justify-content: space-between;
+  }
 `
 
 export const SocialProfileItem = styled.div`

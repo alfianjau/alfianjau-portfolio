@@ -169,6 +169,7 @@ TestimonialSection.defaultProps = {
     fontSize: '14px',
     color: '#43414e',
     mb: '0',
+    minHeight: '4rem'
   },
 }
 

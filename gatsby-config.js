@@ -108,8 +108,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'GCN',
-        short_name: 'GCN',
+        name: 'Alfianjau-portfolio',
+        short_name: 'alfianjau',
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#ffffff',

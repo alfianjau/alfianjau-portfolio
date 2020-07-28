@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
+import Slide from 'react-reveal/Slide';
 import Icon from 'react-icons-kit'
 import Box from '../../../../common/src/components/Box'
 import Text from '../../../../common/src/components/Text'
@@ -40,21 +41,24 @@ const BannerSection = ({
     <BannerWrapper id="banner_section">
       <Container className="banner__wrapper" noGutter mobileGutter width="1200px">
         <Box {...row}>
+
           <Box {...contentArea}>
-            <Heading content="Muhammad Alfian Jauhari" {...nameStyle} />
-            <Box {...roleWrapper}>
-              <Icon
-                icon={cornerDownRight}
-                style={{ color: colors.primary }}
-                size={22}
+            <Slide bottom>
+              <Heading content="Muhammad Alfian Jauhari" {...nameStyle} />
+              <Box {...roleWrapper}>
+                <Icon
+                  icon={cornerDownRight}
+                  style={{ color: colors.primary }}
+                  size={22}
+                />
+                <Heading content="Fullstack Designer" {...roleStyle} />
+              </Box>
+              <Text
+                content="Front-end developer who Aim to become creative coder whom can bend the web with interactive magic ways and colors"
+                {...aboutStyle}
               />
-              <Heading content="Fullstack Designer" {...roleStyle} />
-            </Box>
-            <Text
-              content="Front-end developer who Aim to become creative coder whom can bend the web with interactive magic ways and colors"
-              {...aboutStyle}
-            />
-            <SocialProfile items={Data.portfolioJson.SOCIAL_PROFILES} />
+              <SocialProfile items={Data.portfolioJson.SOCIAL_PROFILES} />
+            </Slide>
           </Box>
           <Box {...imageArea} className="image_area">
             <Image src={PersonImage} alt="muhammad alfian jauhari" />

@@ -7,6 +7,7 @@ import SEO from '../components/SEO'
 import PortfolioShowcase from '../containers/Portfolio/PortfolioShowcase'
 import Skill from '../containers/Portfolio/Skill'
 import Banner from '../containers/Portfolio/Banner'
+import Timeline from '../containers/Portfolio/TimelineSection'
 
 const Index = ({ data }) => {
   return (
@@ -15,6 +16,7 @@ const Index = ({ data }) => {
       <Banner />
       <PortfolioShowcase />
       <Skill />
+      <Timeline />
     </Layout>
   )
 }

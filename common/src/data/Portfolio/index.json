@@ -46,8 +46,8 @@
       "offset": "0"
     },
     {
-      "label": "WHY ME?",
-      "path": "/#process_section",
+      "label": "EXP",
+      "path": "/#works_section",
       "offset": "0"
     }
   ],
@@ -446,6 +446,25 @@
     {
       "image": "../../assets/image/portfolio/client-6.png",
       "title": "Google"
+    }
+  ],
+  "TIMELINE": [{
+      "year": "2015",
+      "title": "PT. Software Seni",
+      "job": "Frontend Developer",
+      "description": "We respect our customer opinions and deals with them with perfect wireframing."
+    },
+    {
+      "year": "2016",
+      "title": "Joglotech",
+      "job": "Senior Frontend Developer",
+      "description": "We provide the best UI/UX Design by following the latest trends of the market ."
+    },
+    {
+      "year": "2018",
+      "title": "PT Mitra Sejahtera Membangun Bangsa",
+      "job": "Frontend Engineer",
+      "description": "After the negotiation is done , We start to build the project with latest technology ."
     }
   ],
   "TESTIMONIAL": [{

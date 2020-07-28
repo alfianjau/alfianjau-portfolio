@@ -36,7 +36,9 @@ export const TestimonialItem = styled.div`
   padding: 30px;
   box-shadow: 0.521px 2.954px 20px 0px rgb(0 169 180 / 0.9);
   width: 100%;
-
+  @media (max-width: 767px) {
+  min-height:10rem;
+  }
   .reviewer_org {
     font-size: 14px;
     color: ${themeGet('colors.primary')}

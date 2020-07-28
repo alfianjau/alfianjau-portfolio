@@ -40,6 +40,7 @@ export const GlobalStyle = createGlobalStyle`
       justify-content: space-between;
       @media (max-width: 767px) {
         padding: 50px 40px 30px 40px;
+        background-color: ${themeGet('colors.ternary')};
       }
       .mobile_menu {
         margin-bottom: 40px;

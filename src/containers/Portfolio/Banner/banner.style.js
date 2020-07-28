@@ -11,14 +11,14 @@ const BannerWrapper = styled.section`
 
   @media (min-width: 991px) {
     margin-top:-3rem;
-    min-height: 100vh;
+    min-height: calc(100vh - 5rem);
   }
 
   .banner__wrapper{
     @media (max-width: 767px) {
   /* Mobile custom breakpoint */
     width: 100%;
-    margin-top:-2rem;
+    margin-top:-1.7rem;
     }
   }
 

@@ -141,7 +141,7 @@ TimelineSection.propTypes = {
 TimelineSection.defaultProps = {
   sectionWrapper: {
     as: 'section',
-    pt: ['60px', '80px', '80px', '80px'],
+    pt: ['60px', '80px', '120px', '120px'],
     pb: ['60px', '80px', '80px', '80px'],
   }, // section header default style
   sectionHeader: {
@@ -149,13 +149,12 @@ TimelineSection.defaultProps = {
   },
   // sub section default style
   sectionSubTitle: {
+    fontSize: ['22px', '26px', '26px', '30px', '30px'],
+    fontWeight: '600',
     as: 'span',
     display: 'block',
     textAlign: 'center',
-    fontSize: '14px',
-    letterSpacing: '0.15em',
-    fontWeight: '700',
-    color: '#5268db',
+    color: colors.primary,
     mb: '10px',
   },
   // section title default style
@@ -164,7 +163,7 @@ TimelineSection.defaultProps = {
     fontSize: ['20px', '24px'],
     fontWeight: '500',
     color: '#0f2137',
-    letterSpacing: '-0.025em',
+    // letterSpacing: '-0.025em',
     mb: '0',
   },
   row: {

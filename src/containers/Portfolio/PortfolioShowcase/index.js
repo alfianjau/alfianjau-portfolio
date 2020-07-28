@@ -20,6 +20,7 @@ import {
   MetaItem,
 } from './portfolioShowcase.style'
 import { PrevButton, NextButton } from '../portfolio.style'
+import colors from '../../../../common/src/theme/portfolio/colors'
 
 const PortfolioShowcase = ({
   sectionWrapper,
@@ -45,6 +46,9 @@ const PortfolioShowcase = ({
             feedback
             featuredIn
             featuredLink
+            buildWith {
+              content
+            }
             image {
               childImageSharp {
                 fluid(quality: 100) {
@@ -70,7 +74,7 @@ const PortfolioShowcase = ({
     <Box {...sectionWrapper} as="section" id="portfolio_section">
       <Container noGutter mobileGutter width="1200px">
         <Box {...secTitleWrapper}>
-          <Heading {...secTitle} content="Some of my past projects worked with great teams" />
+          <Heading {...secTitle} content="SOME OF MY PAST PROJECTS" />
           <Text
             {...secDescription}
             content="For past years"
@@ -225,12 +229,12 @@ PortfolioShowcase.defaultProps = {
   secTitle: {
     fontSize: ['22px', '26px', '26px', '30px', '30px'],
     fontWeight: '600',
-    color: '#302b4e',
+    color: colors.primary,
     lineHeight: '1.34',
     mb: ['15px', '18px', '18px', '20px', '20px'],
   },
   secDescription: {
-    fontSize: ['15px', '16px'],
+    fontSize: ['20px', '24px'],
     fontWeight: '400',
     color: '#43414e',
     lineHeight: '1.5',

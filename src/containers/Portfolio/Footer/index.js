@@ -57,7 +57,7 @@ const Footer = ({
               content="So, do we work together?"
               {...titleStyle}
             />
-            <a href="#1">
+            <a href="/contact">
               <Heading as="h3" content="LET'S TALK!" {...linkStyle} />
             </a>
           </Box>

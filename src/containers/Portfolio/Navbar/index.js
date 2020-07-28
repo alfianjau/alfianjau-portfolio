@@ -59,7 +59,7 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
               menuItems={Data.portfolioJson.MENU_ITEMS}
               offset={-70}
             />
-            <a className="navbar_button" href="#1">
+            <a className="navbar_button" href="/contact">
               <Button {...button} title="LET'S TALK" />
             </a>
             <Drawer
@@ -77,7 +77,7 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
                 drawerClose={state.isOpen}
                 offset={-100}
               />
-              <a className="navbar_drawer_button" href="#1">
+              <a className="navbar_drawer_button" href="mailto=alfianjauhari@gmail.com">
                 <Button {...button} title="LET'S TALK" />
               </a>
             </Drawer>

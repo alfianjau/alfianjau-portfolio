@@ -2,6 +2,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
+import Fade from 'react-reveal/Fade';
 import { Line } from 'rc-progress'
 import { Icon } from 'react-icons-kit'
 import Box from '../../../../common/src/components/Box'
@@ -53,7 +54,7 @@ const SkillSection = ({
     <Box {...sectionWrapper} as="section" id="skills_section">
       <Container noGutter mobileGutter width="1200px">
         <Box {...secTitleWrapper}>
-          <Heading {...secTitle} content="What I could provide" />
+          <Heading {...secTitle} content="WHAT I COULD PROVIDE" />
           <Text
             {...secDescription}
             content="Take a look on some of my technological tech stack I've been used for past projects!"
@@ -65,16 +66,20 @@ const SkillSection = ({
             <Box {...col} key={`skill-item-${index}`}>
               <SkillItem>
                 <SkillDetails>
-                  <SkillIcon>
-                    <Image
-                      src={item.icon.publicURL}
-                      alt={`skill-icon-${index + 1}`}
-                    />
-                  </SkillIcon>
-                  <SkillAbout>
-                    <Heading content={item.title} {...skillTitle} />
-                    <Text content={item.description} {...skillDescription} />
-                  </SkillAbout>
+                  <Fade bottom delay="100">
+                    <SkillIcon>
+                      <Image
+                        src={item.icon.publicURL}
+                        alt={`skill-icon-${index + 1}`}
+                      />
+                    </SkillIcon>
+                  </Fade>
+                  <Fade bottom delay="200">
+                    <SkillAbout>
+                      <Heading content={item.title} {...skillTitle} />
+                      <Text content={item.description} {...skillDescription} />
+                    </SkillAbout>
+                  </Fade>
                 </SkillDetails>
                 <SkillProgress>
                   <SuccessRate>
@@ -139,13 +144,13 @@ SkillSection.defaultProps = {
   secTitle: {
     fontSize: ['22px', '26px', '26px', '30px', '30px'],
     fontWeight: '700',
-    color: '#302b4e',
+    color: colors.primary,
     lineHeight: '1.34',
     mb: ['15px', '18px', '18px', '20px', '20px'],
     textAlign: 'center',
   },
   secDescription: {
-    fontSize: ['15px', '16px'],
+    fontSize: ['20px', '24px'],
     fontWeight: '400',
     color: '#43414e',
     lineHeight: '1.5',

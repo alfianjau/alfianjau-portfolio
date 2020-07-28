@@ -41,11 +41,6 @@
       "offset": "0"
     },
     {
-      "label": "CONTACT",
-      "path": "/contact",
-      "offset": "0"
-    },
-    {
       "label": "EXP",
       "path": "/#works_section",
       "offset": "0"
@@ -97,13 +92,13 @@
           "love": "1.5K",
           "feedback": "1.2K",
           "buildWith": [{
-              "content": "React JS"
+              "content": "Ruby On Rails"
             },
             {
-              "content": "Next JS"
+              "content": "Handcrafted CSS"
             },
             {
-              "content": "Styled Component"
+              "content": "BEM Architecture"
             }
           ]
         },
@@ -118,13 +113,13 @@
           "love": "5.5K",
           "feedback": "3.2K",
           "buildWith": [{
-              "content": "React Native"
+              "content": "Ruby On Rails"
             },
             {
-              "content": "Firebase"
+              "content": "Handcrafted CSS"
             },
             {
-              "content": "Styled Component"
+              "content": "BEM Architecture"
             }
           ]
         }
@@ -164,13 +159,13 @@
           "love": "5.5K",
           "feedback": "3.2K",
           "buildWith": [{
-              "content": "React Native"
+              "content": "Laravel"
             },
             {
-              "content": "Firebase"
+              "content": "Handcrafted CSS"
             },
             {
-              "content": "Styled Component"
+              "content": "BEM Architecture"
             }
           ]
         }
@@ -189,13 +184,13 @@
           "love": "1.5K",
           "feedback": "1.2K",
           "buildWith": [{
-              "content": "React JS"
+              "content": "Wordpress"
             },
             {
-              "content": "Next JS"
+              "content": "Handcrafted CSS"
             },
             {
-              "content": "Styled Component"
+              "content": "Responsive Website"
             }
           ]
         },
@@ -210,13 +205,13 @@
           "love": "5.5K",
           "feedback": "3.2K",
           "buildWith": [{
-              "content": "React Native"
+              "content": "Wordpress"
             },
             {
-              "content": "Firebase"
+              "content": "Handcrafted CSS"
             },
             {
-              "content": "Styled Component"
+              "content": "Responsive Website"
             }
           ]
         }
@@ -235,13 +230,13 @@
           "love": "1.5K",
           "feedback": "1.2K",
           "buildWith": [{
-              "content": "React JS"
+              "content": "Vue JS"
             },
             {
-              "content": "Next JS"
+              "content": "Nuxt JS"
             },
             {
-              "content": "Styled Component"
+              "content": "Tailwind CSS"
             }
           ]
         },
@@ -256,23 +251,23 @@
           "love": "5.5K",
           "feedback": "3.2K",
           "buildWith": [{
-              "content": "React Native"
+              "content": "Vue JS"
             },
             {
-              "content": "Firebase"
+              "content": "Nuxt JS"
             },
             {
-              "content": "Styled Component"
+              "content": "Tailwind CSS"
             }
           ]
         }
       ]
     },
     {
-      "title": "Some NDA PROJECTS",
+      "title": "SOME NDA PROJECTS",
       "portfolioItem": [{
-          "title": "Canada Media Site",
-          "description": "An effective and immersive user experience is what catches the attention and spreads a clear message. That's why we attach great importance to the fact that ergonomics serves the design, and that this design is innovative and neat.",
+          "title": "It's NDA PROJECTS DUDE",
+          "description": "It's a Secret, You know what I mean",
           "image": "../../assets/image/portfolio/portfolio-1.jpg",
           "link": "#",
           "featuredIn": "AWWWARDS",
@@ -281,13 +276,22 @@
           "love": "1.5K",
           "feedback": "1.2K",
           "buildWith": [{
-              "content": "React JS"
+              "content": "Gatsby JS"
             },
             {
-              "content": "Next JS"
+              "content": "Jekyll"
             },
             {
               "content": "Styled Component"
+            },
+            {
+              "content": "Vue JS"
+            },
+            {
+              "content": "VUEX"
+            },
+            {
+              "content": "REST API"
             }
           ]
         },
@@ -406,7 +410,7 @@
     },
     {
       "title": "UI/UX Design",
-      "description": "-Wireframing \n-Design in the Browser\n-Prototype\n-Responsive layouts\n-Design System",
+      "description": "-Wireframing \n-Design in the Browser\n-Prototype\n-Responsive layouts\n-Design System\n-Sketch\n-Illustrator\n-Figma",
       "icon": "../../assets/image/portfolio/ui.svg",
       "successRate": "85"
     },

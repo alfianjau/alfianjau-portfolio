@@ -12,7 +12,7 @@ import SocialProfile from '../SocialProfile'
 import BannerWrapper from './banner.style'
 import Github from '../../../containers/Portfolio/Testimonial'
 import { cornerDownRight } from 'react-icons-kit/feather/cornerDownRight'
-import PersonImage from '../../../../static/images/alfianjau.jpeg'
+import PersonImage from '../../../../static/images/alfianjau.webp'
 import colors from '../../../../common/src/theme/portfolio/colors'
 
 const BannerSection = ({

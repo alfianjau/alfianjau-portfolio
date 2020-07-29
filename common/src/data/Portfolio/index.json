@@ -84,7 +84,7 @@
       "portfolioItem": [{
           "title": "PERSIB WEB",
           "description": "Develop Frontend architecture and maintain responsible responsive style from development phase until production.\n\nUsing BEM(Block Element Modifier) architecture for CSS naming convention to maintain consistency and minimize class specificity.\n\nUsing SCSS mixin and variable to minimize reinventing the wheel for repeatable component while creating responsive design ",
-          "image": "../../assets/image/portfolio/persib-web.png",
+          "image": "../../assets/image/portfolio/persib-web.webp",
           "link": "https://persib.co.id/",
           "featuredIn": "AWWWARDS",
           "featuredLink": "#",

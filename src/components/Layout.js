@@ -23,6 +23,7 @@ const Root = styled.div`
 const Main = styled.div`
   padding-top: 8rem;
   font-family: ${props => props.theme.fonts.body};
+  background-color: var(--primary);
 `
 
 const Layout = props => {

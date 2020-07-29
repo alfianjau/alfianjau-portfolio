@@ -13,7 +13,7 @@ export const SkillDetails = styled.div`
   display: flex;
   align-items: flex-start;
   min-height:23rem;
-  justify-content:space-evenly;
+  justify-content:space-between;
   @media (max-width: 1199px) {
     padding: 70px 45px 40px 45px;
   }
@@ -28,9 +28,9 @@ export const SkillDetails = styled.div`
 `;
 
 export const SkillIcon = styled.div`
-  flex: 0 0 10rem;
-  max-width: 10rem;
-  padding:1.2rem;
+  flex: 0 0 12rem;
+  max-width: 12rem;
+  padding:1rem;
   img{
     width: 100%;
   }

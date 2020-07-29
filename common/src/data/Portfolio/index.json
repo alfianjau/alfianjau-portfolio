@@ -36,13 +36,13 @@
       "offset": "0"
     },
     {
-      "label": "BLOG",
-      "path": "/blog",
+      "label": "EXP",
+      "path": "/#works_section",
       "offset": "0"
     },
     {
-      "label": "EXP",
-      "path": "/#works_section",
+      "label": "BLOG",
+      "path": "/blog",
       "offset": "0"
     }
   ],

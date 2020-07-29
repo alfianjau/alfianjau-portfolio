@@ -74,10 +74,10 @@ const PortfolioShowcase = ({
       <Container noGutter mobileGutter width="1200px">
         <Box {...secTitleWrapper}>
           <Heading {...secTitle} content="SOME OF MY PAST PROJECTS" />
-          <Text
+          {/* <Text
             {...secDescription}
             content="For past years"
-          />
+          /> */}
         </Box>
         <Fade bottom delay={200}>
           <PortfolioShowcaseWrapper>
@@ -225,6 +225,7 @@ PortfolioShowcase.defaultProps = {
   sectionWrapper: {
     pt: ['60px', '80px', '100px', '110px', '150px'],
     pb: ['60px', '80px', '100px', '110px', '150px'],
+    minHeight: ['calc(100vh -8rem)', 'inherit']
   },
   secTitleWrapper: {
     width: ['100%', '100%', '60%', '50%', '50%'],

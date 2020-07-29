@@ -14,6 +14,9 @@ export const SkillDetails = styled.div`
   align-items: flex-start;
   min-height:23rem;
   justify-content:space-between;
+  & > :first-child{
+    align-self: center;
+  }
   @media (max-width: 1199px) {
     padding: 70px 45px 40px 45px;
   }
@@ -22,7 +25,7 @@ export const SkillDetails = styled.div`
   }
   @media (max-width: 575px) {
     flex-direction:column;
-    align-items: center;
+    align-items: baseline;
     padding: 35px 25px 20px 25px;
   }
 `;

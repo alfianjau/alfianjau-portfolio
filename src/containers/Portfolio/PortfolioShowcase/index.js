@@ -17,8 +17,6 @@ import {
   PortfolioShowcaseItem,
   PortfolioLink,
   BuiltWith,
-  PortfolioMeta,
-  MetaItem,
 } from './portfolioShowcase.style'
 import { PrevButton, NextButton } from '../portfolio.style'
 import colors from '../../../../common/src/theme/portfolio/colors'
@@ -262,6 +260,7 @@ PortfolioShowcase.defaultProps = {
   detailsStyle: {
     fontSize: ['15px', '15px', '15px', '16px', '16px'],
     color: '#43414e',
+    whiteSpace: 'break-spaces',
     lineHeight: '1.5',
     mb: '0',
   },

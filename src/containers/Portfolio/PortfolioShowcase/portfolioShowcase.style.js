@@ -123,6 +123,10 @@ export const PortfolioShowcaseItem = styled.div`
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+
+  p{
+    white-space: pre-line;
+  }
 `
 
 export const PortfolioLink = styled.div`

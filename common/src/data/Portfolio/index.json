@@ -83,7 +83,7 @@
       "title": "PERSIB",
       "portfolioItem": [{
           "title": "PERSIB WEB",
-          "description": "An effective and immersive user experience is what catches the attention and spreads a clear message. That's why we attach great importance to the fact that ergonomics serves the design, and that this design is innovative and neat.",
+          "description": "Develop Frontend architecture and maintain responsible responsive style from development phase until production.\n\nUsing BEM(Block Element Modifier) architecture for CSS naming convention to maintain consistency and minimize class specificity.\n\nUsing SCSS mixin and variable to minimize reinventing the wheel for repeatable component while creating responsive design ",
           "image": "../../assets/image/portfolio/persib-web.png",
           "link": "https://persib.co.id/",
           "featuredIn": "AWWWARDS",
@@ -104,7 +104,7 @@
         },
         {
           "title": "PERSIB MOBILE",
-          "description": "An effective and immersive user experience is what catches the attention and spreads a clear message. That's why we attach great importance to the fact that ergonomics serves the design, and that this design is innovative and neat.",
+          "description": "Using BEM(Block Element Modifier) architecture for CSS naming convention to maintain consistency, better responsive design consistency and modularity",
           "image": "../../assets/image/portfolio/persib-mobile.png",
           "link": "https://persib.co.id/",
           "featuredIn": "AppStore",
@@ -129,7 +129,7 @@
       "title": "LIGA INDONESIA WEB",
       "portfolioItem": [{
           "title": "Liga Indonesia webview",
-          "description": "An effective and immersive user experience is what catches the attention and spreads a clear message. That's why we attach great importance to the fact that ergonomics serves the design, and that this design is innovative and neat.",
+          "description": "With BEM Architecture the redesign of this site become such a bliss of course with added scss mixins would make a great support for development this large site",
           "image": "../../assets/image/portfolio/liga-web.png",
           "link": "https://liga-indonesia.id/",
           "featuredIn": "AWWWARDS",
@@ -138,19 +138,19 @@
           "love": "1.5K",
           "feedback": "1.2K",
           "buildWith": [{
-              "content": "React JS"
+              "content": "Laravel"
             },
             {
-              "content": "Next JS"
+              "content": "Handcrafted CSS"
             },
             {
-              "content": "Styled Component"
+              "content": "BEM Architecture"
             }
           ]
         },
         {
           "title": "Liga Indonesia mobile view",
-          "description": "An effective and immersive user experience is what catches the attention and spreads a clear message. That's why we attach great importance to the fact that ergonomics serves the design, and that this design is innovative and neat.",
+          "description": "Handcrafted CSS + SCSS mixins + BEM Architecture at deployment easen the burden of recreating the pages component and minimize responsive specific codes",
           "image": "../../assets/image/portfolio/liga-mobile.png",
           "link": "https://liga-indonesia.id/",
           "featuredIn": "AppStore",
@@ -175,7 +175,7 @@
       "title": "INSA",
       "portfolioItem": [{
           "title": "INSA webview",
-          "description": "An effective and immersive user experience is what catches the attention and spreads a clear message. That's why we attach great importance to the fact that ergonomics serves the design, and that this design is innovative and neat.",
+          "description": "Handcrafted Worpress Site with custom crafted CSS to realize design ideas needed for this project",
           "image": "../../assets/image/portfolio/insa-web.png",
           "link": "https://insa.or.id/",
           "featuredIn": "AWWWARDS",
@@ -196,7 +196,7 @@
         },
         {
           "title": "INSA mobile view",
-          "description": "An effective and immersive user experience is what catches the attention and spreads a clear message. That's why we attach great importance to the fact that ergonomics serves the design, and that this design is innovative and neat.",
+          "description": "With old school media queries we break through a challenge about overcoming this site into responsive mode",
           "image": "../../assets/image/portfolio/insa-mobile.png",
           "link": "https://insa.or.id/",
           "featuredIn": "AppStore",
@@ -221,7 +221,7 @@
       "title": "HAKOOI",
       "portfolioItem": [{
           "title": "HAKOOI Site PWA",
-          "description": "An effective and immersive user experience is what catches the attention and spreads a clear message. That's why we attach great importance to the fact that ergonomics serves the design, and that this design is innovative and neat.",
+          "description": "Experiment on using Tailwind CSS and NUXT JS to harness PWA technology and modularity on codebase",
           "image": "../../assets/image/portfolio/hakooi-web.png",
           "link": "https://hakooi.com/",
           "featuredIn": "AWWWARDS",
@@ -242,7 +242,7 @@
         },
         {
           "title": "HAKOOI mobile view",
-          "description": "An effective and immersive user experience is what catches the attention and spreads a clear message. That's why we attach great importance to the fact that ergonomics serves the design, and that this design is innovative and neat.",
+          "description": "With Tailwind CSS we can maintain consistencies on each design spacing and sizing with some flairs added",
           "image": "../../assets/image/portfolio/hakooi-mobile.png",
           "link": "https://hakooi.com/",
           "featuredIn": "AppStore",
@@ -266,7 +266,7 @@
     {
       "title": "SOME NDA PROJECTS",
       "portfolioItem": [{
-          "title": "It's NDA PROJECTS DUDE",
+          "title": "It's NDA projects dude",
           "description": "It's a Secret, You know what I mean",
           "image": "../../assets/image/portfolio/portfolio-nda.png",
           "link": "#",
@@ -296,8 +296,8 @@
           ]
         },
         {
-          "title": "RedQ, Inc. mobile app",
-          "description": "An effective and immersive user experience is what catches the attention and spreads a clear message. That's why we attach great importance to the fact that ergonomics serves the design, and that this design is innovative and neat.",
+          "title": "Told you it's a secret",
+          "description": "I've worked on wide range technological stack however it's on non disclosure agreement",
           "image": "../../assets/image/portfolio/portfolio-nda-secret.png",
           "link": "#",
           "featuredIn": "AppStore",
@@ -306,15 +306,8 @@
           "love": "5.5K",
           "feedback": "3.2K",
           "buildWith": [{
-              "content": "React Native"
-            },
-            {
-              "content": "Firebase"
-            },
-            {
-              "content": "Styled Component"
-            }
-          ]
+            "content": "Secret"
+          }]
         }
       ]
     }

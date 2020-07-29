@@ -14,7 +14,7 @@ export const PortfolioShowcaseWrapper = styled.div`
 
   .glide__controls {
     position: absolute;
-    bottom: -12px;
+    top: -7rem;
     right: 0;
     @media (max-width: 990px) {
       bottom: 23px;

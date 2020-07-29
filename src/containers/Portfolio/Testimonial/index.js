@@ -2,6 +2,7 @@ import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 // import Image from 'gatsby-image'
 import PropTypes from 'prop-types'
+import Fade from 'react-reveal/Fade';
 import { Icon } from 'react-icons-kit'
 import Box from '../../../../common/src/components/Box'
 import Text from '../../../../common/src/components/Text'
@@ -76,44 +77,46 @@ const TestimonialSection = ({
         <Box {...secTitleWrapper}>
           <Heading {...secTitle} content="Public Repositories" />
         </Box>
-        <TestimonialWrapper>
-          <GlideCarousel
-            carouselSelector="testimonial-carousel"
-            options={carouselOptions}
-            prevButton={
-              <PrevButton>
-                <span />
-              </PrevButton>
-            }
-            nextButton={
-              <NextButton>
-                <span />
-              </NextButton>
-            }
-          >
-            <>
-              {Data.portfolioJson.TESTIMONIAL.map((item, index) => (
-                <GlideSlide key={`testimonial-item-${index}`}>
-                  <TestimonialItem>
-                    <TestimonialHead>
-                      <Text {...reviewStyle} content={item.review} />
-                      <a href={item.githubLink || '#'} aria-label="github">
-                        <Icon icon={github} size={24} />
-                      </a>
-                    </TestimonialHead>
+        <Fade bottom delay={200}>
+          <TestimonialWrapper>
+            <GlideCarousel
+              carouselSelector="testimonial-carousel"
+              options={carouselOptions}
+              prevButton={
+                <PrevButton>
+                  <span />
+                </PrevButton>
+              }
+              nextButton={
+                <NextButton>
+                  <span />
+                </NextButton>
+              }
+            >
+              <>
+                {Data.portfolioJson.TESTIMONIAL.map((item, index) => (
+                  <GlideSlide key={`testimonial-item-${index}`}>
+                    <TestimonialItem>
+                      <TestimonialHead>
+                        <Text {...reviewStyle} content={item.review} />
+                        <a href={item.githubLink || '#'} aria-label="github">
+                          <Icon icon={github} size={24} />
+                        </a>
+                      </TestimonialHead>
 
-                    {/* <Heading as="h3" content={item.name} {...nameStyle} /> */}
-                    <Text
-                      as="span"
-                      content={item.designation}
-                      {...designationStyle}
-                    />
-                  </TestimonialItem>
-                </GlideSlide>
-              ))}
-            </>
-          </GlideCarousel>
-        </TestimonialWrapper>
+                      {/* <Heading as="h3" content={item.name} {...nameStyle} /> */}
+                      <Text
+                        as="span"
+                        content={item.designation}
+                        {...designationStyle}
+                      />
+                    </TestimonialItem>
+                  </GlideSlide>
+                ))}
+              </>
+            </GlideCarousel>
+          </TestimonialWrapper>
+        </Fade>
       </Container>
     </Box>
   )

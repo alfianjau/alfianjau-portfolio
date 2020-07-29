@@ -5,6 +5,7 @@ import Image from 'gatsby-image'
 import Tabs, { TabPane } from 'rc-tabs'
 import TabContent from 'rc-tabs/lib/TabContent'
 import ScrollableInkTabBar from 'rc-tabs/lib/ScrollableInkTabBar'
+import Fade from 'react-reveal/Fade';
 import Box from '../../../../common/src/components/Box'
 import Text from '../../../../common/src/components/Text'
 import Heading from '../../../../common/src/components/Heading'
@@ -80,127 +81,132 @@ const PortfolioShowcase = ({
             content="For past years"
           />
         </Box>
-
-        <PortfolioShowcaseWrapper>
-          <Tabs
-            renderTabBar={() => <ScrollableInkTabBar />}
-            renderTabContent={() => <TabContent animated={false} />}
-          >
-            {Data.portfolioJson.PORTFOLIO_SHOWCASE.map((tabItem, index) => (
-              <TabPane
-                tab={
-                  <Text
-                    content={tabItem.title}
-                    data-text={tabItem.title}
-                    as="span"
-                  />
-                }
-                key={index + 1}
-              >
-                <GlideCarousel
-                  carouselSelector={`portfolio-showcase-carousel-${index + 1}`}
-                  options={carouselOptions}
-                  prevButton={
-                    <PrevButton>
-                      <span />
-                    </PrevButton>
+        <Fade bottom delay={200}>
+          <PortfolioShowcaseWrapper>
+            <Tabs
+              renderTabBar={() => <ScrollableInkTabBar />}
+              renderTabContent={() => <TabContent animated={false} />}
+            >
+              {Data.portfolioJson.PORTFOLIO_SHOWCASE.map((tabItem, index) => (
+                <TabPane
+                  tab={
+                    <Text
+                      content={tabItem.title}
+                      data-text={tabItem.title}
+                      as="span"
+                    />
                   }
-                  nextButton={
-                    <NextButton>
-                      <span />
-                    </NextButton>
-                  }
+                  key={index + 1}
                 >
-                  <>
-                    {tabItem.portfolioItem.map((portfolioItem, index) => (
-                      <GlideSlide key={`PortfolioShowcaseItem-${index}`}>
-                        <PortfolioShowcaseItem>
-                          <Box {...portfolioImage}>
-                            <Image
-                              fluid={
-                                (portfolioItem.image !== null) | undefined
-                                  ? portfolioItem.image.childImageSharp.fluid
-                                  : {}
-                              }
-                              alt={`PortfolioImage-${index + 1}`}
-                            />
-                          </Box>
-                          <Box {...portfolioDetails}>
-                            <PortfolioLink>
-                              <a href={portfolioItem.link || '#'}>
-                                VISIT LIVE SITE
+                  <Fade bottom delay={100}>
+                    <GlideCarousel
+                      carouselSelector={`portfolio-showcase-carousel-${index + 1}`}
+                      options={carouselOptions}
+                      prevButton={
+                        <PrevButton>
+                          <span />
+                        </PrevButton>
+                      }
+                      nextButton={
+                        <NextButton>
+                          <span />
+                        </NextButton>
+                      }
+                    >
+                      <>
+                        {tabItem.portfolioItem.map((portfolioItem, index) => (
+                          <GlideSlide key={`PortfolioShowcaseItem-${index}`}>
+                            <PortfolioShowcaseItem>
+                              <Box {...portfolioImage}>
+                                <Image
+                                  fluid={
+                                    (portfolioItem.image !== null) | undefined
+                                      ? portfolioItem.image.childImageSharp.fluid
+                                      : {}
+                                  }
+                                  alt={`PortfolioImage-${index + 1}`}
+                                />
+                              </Box>
+                              <Box {...portfolioDetails}>
+                                <PortfolioLink>
+                                  <a href={portfolioItem.link || '#'}>
+                                    VISIT LIVE SITE
                               </a>
-                            </PortfolioLink>
-                            <Heading
-                              content={portfolioItem.title}
-                              {...titleStyle}
-                            />
-                            <Text
-                              content={portfolioItem.description}
-                              {...detailsStyle}
-                            />
-                            {portfolioItem.buildWith ? (
-                              <BuiltWith>
-                                {portfolioItem.buildWith.map((item, index) => (
-                                  <span key={`buildWith-item-${index}`}>
-                                    {item.content}
-                                  </span>
-                                ))}
-                              </BuiltWith>
-                            ) : (
-                                ''
-                              )}
-                          </Box>
+                                </PortfolioLink>
+                                <Heading
+                                  content={portfolioItem.title}
+                                  {...titleStyle}
+                                />
+                                <Text
+                                  content={portfolioItem.description}
+                                  {...detailsStyle}
+                                />
+                                {portfolioItem.buildWith ? (
+                                  <BuiltWith>
+                                    {portfolioItem.buildWith.map((item, index) => (
+                                      <span key={`buildWith-item-${index}`}>
+                                        {item.content}
+                                      </span>
+                                    ))}
+                                  </BuiltWith>
+                                ) : (
+                                    ''
+                                  )}
+                              </Box>
 
-                          {portfolioItem.featuredIn ||
-                            portfolioItem.view ||
-                            portfolioItem.love ||
-                            portfolioItem.feedback ? (
-                              <PortfolioMeta>
-                                {portfolioItem.featuredIn ? (
-                                  <MetaItem className="meta_featured">
-                                    FEATURED IN
-                                    <a href={portfolioItem.featuredLink || '#'}>
-                                      {portfolioItem.featuredIn}
-                                    </a>
-                                  </MetaItem>
+                              {/* {portfolioItem.featuredIn ||
+                                portfolioItem.view ||
+                                portfolioItem.love ||
+                                portfolioItem.feedback ? (
+                                  <PortfolioMeta>
+                                    {portfolioItem.featuredIn ? (
+                                      <MetaItem className="meta_featured">
+                                        FEATURED IN
+                                        <a href={portfolioItem.featuredLink || '#'}>
+                                          {portfolioItem.featuredIn}
+                                        </a>
+                                      </MetaItem>
+                                    ) : (
+                                        ''
+                                      )}
+                                    {portfolioItem.view ? (
+                                      <MetaItem>
+                                        <b>{portfolioItem.view}</b> View
+                                      </MetaItem>
+                                    ) : (
+                                        ''
+                                      )}
+                                    {portfolioItem.love ? (
+                                      <MetaItem>
+                                        <b>{portfolioItem.love}</b> Love
+                                      </MetaItem>
+                                    ) : (
+                                        ''
+                                      )}
+                                    {portfolioItem.feedback ? (
+                                      <MetaItem>
+                                        <b>{portfolioItem.feedback}</b> Feedback
+                                      </MetaItem>
+                                    ) : (
+                                        ''
+                                      )}
+                                  </PortfolioMeta>
                                 ) : (
-                                    ''
-                                  )}
-                                {portfolioItem.view ? (
-                                  <MetaItem>
-                                    <b>{portfolioItem.view}</b> View
-                                  </MetaItem>
-                                ) : (
-                                    ''
-                                  )}
-                                {portfolioItem.love ? (
-                                  <MetaItem>
-                                    <b>{portfolioItem.love}</b> Love
-                                  </MetaItem>
-                                ) : (
-                                    ''
-                                  )}
-                                {portfolioItem.feedback ? (
-                                  <MetaItem>
-                                    <b>{portfolioItem.feedback}</b> Feedback
-                                  </MetaItem>
-                                ) : (
-                                    ''
-                                  )}
-                              </PortfolioMeta>
-                            ) : (
-                              ''
-                            )}
-                        </PortfolioShowcaseItem>
-                      </GlideSlide>
-                    ))}
-                  </>
-                </GlideCarousel>
-              </TabPane>
-            ))}
-          </Tabs>
-        </PortfolioShowcaseWrapper>
+                                  ''
+                                )} */}
+                            </PortfolioShowcaseItem>
+                          </GlideSlide>
+                        ))}
+                      </>
+                    </GlideCarousel>
+                  </Fade>
+
+                </TabPane>
+              ))}
+            </Tabs>
+          </PortfolioShowcaseWrapper>
+        </Fade>
+
       </Container>
     </Box>
   )

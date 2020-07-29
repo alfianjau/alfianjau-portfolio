@@ -454,21 +454,21 @@
   ],
   "TIMELINE": [{
       "year": "2015",
-      "title": "PT. Software Seni",
+      "title": "Software Seni ID",
       "job": "Frontend Developer",
-      "description": "We respect our customer opinions and deals with them with perfect wireframing."
+      "description": "Design layouts and implementing visual elements that users see and interact with in a web and also adjust it with design theories and another flairs."
     },
     {
-      "year": "2016",
+      "year": "2017",
       "title": "Joglotech",
       "job": "Senior Frontend Developer",
-      "description": "We provide the best UI/UX Design by following the latest trends of the market ."
+      "description": "Develop clean user interface and combine it with user experiences fundamentals"
     },
     {
       "year": "2018",
       "title": "PT Mitra Sejahtera Membangun Bangsa",
       "job": "Frontend Engineer",
-      "description": "After the negotiation is done , We start to build the project with latest technology ."
+      "description": "Planning best case UI Architecture and integrating with SPA technologies"
     }
   ],
   "TESTIMONIAL": [{

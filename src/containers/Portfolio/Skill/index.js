@@ -66,7 +66,7 @@ const SkillSection = ({
             <Box {...col} key={`skill-item-${index}`}>
               <SkillItem>
                 <SkillDetails>
-                  <Fade bottom delay="100">
+                  <Fade bottom delay={100}>
                     <SkillIcon>
                       <Image
                         src={item.icon.publicURL}
@@ -74,7 +74,7 @@ const SkillSection = ({
                       />
                     </SkillIcon>
                   </Fade>
-                  <Fade bottom delay="200">
+                  <Fade bottom delay={200}>
                     <SkillAbout>
                       <Heading content={item.title} {...skillTitle} />
                       <Text content={item.description} {...skillDescription} />
@@ -115,7 +115,7 @@ const SkillSection = ({
           ))}
         </Box>
       </Container>
-    </Box>
+    </Box >
   )
 }
 

@@ -72,11 +72,11 @@ const Select = styled.select`
 `
 
 const Pagination = props => {
-  function changePage(e) {
+  function changePage (e) {
     navigate(
       e.target.value
-        ? `${props.context.paginationPath}/${e.target.value}`
-        : `${props.context.paginationPath}/`
+        ? `${props.context.paginationPath}/blog/${e.target.value}`
+        : `${props.context.paginationPath}/blog`
     )
   }
 

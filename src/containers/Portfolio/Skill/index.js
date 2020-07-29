@@ -176,7 +176,7 @@ SkillSection.defaultProps = {
   skillTitle: {
     fontSize: ['16px', '18px', '18px', '20px', '20px'],
     fontWeight: '600',
-    color: '#302b4e',
+    color: colors.primary,
     mb: '12px',
   },
   skillDescription: {

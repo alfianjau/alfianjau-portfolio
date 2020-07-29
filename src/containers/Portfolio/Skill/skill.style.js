@@ -31,6 +31,9 @@ export const SkillIcon = styled.div`
   flex: 0 0 10rem;
   max-width: 10rem;
   padding:1.2rem;
+  img{
+    width: 100%;
+  }
   @media (max-width: 990px) {
     flex: 0 0 9rem;
     max-width: 9rem;

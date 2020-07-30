@@ -84,6 +84,105 @@
     }
   ],
   "PORTFOLIO_SHOWCASE": [{
+      "title": "MY PERSONAL SITE",
+      "portfolioItem": [{
+          "title": "Web view",
+          "description": "A journey to create fast JAM Stack based site with the help of Contentful, GatsbyJS and Styled component",
+          "image": "../../assets/image/portfolio/portfolio-web.webp",
+          "link": "https://www.alfianjau.com/",
+          "featuredIn": "AWWWARDS",
+          "featuredLink": "#",
+          "view": "4.5K",
+          "love": "1.5K",
+          "feedback": "1.2K",
+          "buildWith": [{
+              "content": "Gatsby JS"
+            },
+            {
+              "content": "React JS"
+            },
+            {
+              "content": "Contentful"
+            },
+            {
+              "content": "Styled component"
+            }
+          ]
+        },
+        {
+          "title": "Mobile view",
+          "description": "With styled component we can consistently maintain better style for modularity",
+          "image": "../../assets/image/portfolio/portfolio-mobile.webp",
+          "link": "https://www.alfianjau.com/",
+          "featuredIn": "AppStore",
+          "featuredLink": "#",
+          "view": "8.5K",
+          "love": "5.5K",
+          "feedback": "3.2K",
+          "buildWith": [{
+              "content": "Gatsby JS"
+            },
+            {
+              "content": "React JS"
+            },
+            {
+              "content": "Contentful"
+            },
+            {
+              "content": "Styled component"
+            }
+          ]
+        },
+        {
+          "title": "GT metrix score",
+          "description": "Asses site scoring with GT Metrix for better SEO",
+          "image": "../../assets/image/portfolio/portfolio-gtmetrix.webp",
+          "link": "https://gtmetrix.com/reports/www.alfianjau.com/sLuRWQUY",
+          "featuredIn": "AppStore",
+          "featuredLink": "#",
+          "view": "8.5K",
+          "love": "5.5K",
+          "feedback": "3.2K",
+          "buildWith": [{
+              "content": "Gatsby JS"
+            },
+            {
+              "content": "React JS"
+            },
+            {
+              "content": "Contentful"
+            },
+            {
+              "content": "Styled component"
+            }
+          ]
+        },
+        {
+          "title": "Lighthouse",
+          "description": "Lighthouse speed test",
+          "image": "../../assets/image/portfolio/portfolio-lighthouse.webp",
+          "link": "https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fwww.alfianjau.com",
+          "featuredIn": "AppStore",
+          "featuredLink": "#",
+          "view": "8.5K",
+          "love": "5.5K",
+          "feedback": "3.2K",
+          "buildWith": [{
+              "content": "Gatsby JS"
+            },
+            {
+              "content": "React JS"
+            },
+            {
+              "content": "Contentful"
+            },
+            {
+              "content": "Styled component"
+            }
+          ]
+        }
+      ]
+    }, {
       "title": "PERSIB",
       "portfolioItem": [{
           "title": "PERSIB WEB",

@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import Search from '../components/Search'
 import Layout from '../components/Layout'
 import CardList from '../components/CardList'
 import Card from '../components/Card'
@@ -30,6 +31,7 @@ const Posts = ({ data, pageContext }) => {
     <Layout>
       <SEO title={startCase(basePath)} image={ogImage} />
       <Container>
+        <Search indexName="Posts"></Search>
         {isFirstPage ? (
           <CardList>
             <Card {...featuredPost} featured basePath={basePath} />
@@ -38,12 +40,12 @@ const Posts = ({ data, pageContext }) => {
             ))}
           </CardList>
         ) : (
-          <CardList>
-            {posts.map(({ node: post }) => (
-              <Card key={post.id} {...post} basePath={basePath} />
-            ))}
-          </CardList>
-        )}
+            <CardList>
+              {posts.map(({ node: post }) => (
+                <Card key={post.id} {...post} basePath={basePath} />
+              ))}
+            </CardList>
+          )}
       </Container>
       <Pagination context={pageContext} />
     </Layout>

@@ -12,6 +12,8 @@ exports.onCreateWebpackConfig = ({ actions }) => {
     },
   })
 }
+
+
 module.exports = async ({ graphql, actions }) => {
   const { createPage } = actions
 
@@ -20,6 +22,15 @@ module.exports = async ({ graphql, actions }) => {
   // Create a page for each "post"
   const postsQuery = await graphql(query.data.posts)
   const posts = postsQuery.data.allContentfulPost.edges
+
+  // create search box
+  createPage({
+    path: `${basePath === '/search/' ? '' : basePath}/search/`,
+    component: path.resolve(`./src/templates/search.js`),
+    context: {
+      basePath: basePath === '/search/' ? '' : basePath,
+    },
+  })
   posts.forEach((post, i) => {
     const next = i === posts.length - 1 ? null : posts[i + 1].node
     const prev = i === 0 ? null : posts[i - 1].node
@@ -86,4 +97,7 @@ module.exports = async ({ graphql, actions }) => {
       },
     })
   })
+
+
+
 }

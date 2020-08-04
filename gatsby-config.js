@@ -15,6 +15,10 @@ try {
   }
 }
 
+const queries = require('./src/gatsby/utils/algolia');
+require('dotenv').config();
+
+
 module.exports = {
   siteMetadata: {
     title: 'Alfianjau Portfolio',
@@ -115,6 +119,15 @@ module.exports = {
         theme_color: '#ffffff',
         display: 'minimal-ui',
         icon: './static/images/favicon.png',
+      },
+    },
+    {
+      resolve: `gatsby-plugin-algolia`,
+      options: {
+        appId: process.env.GATSBY_ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_ADMIN_KEY,
+        queries,
+        chunkSize: 10000,
       },
     },
     'gatsby-plugin-offline',

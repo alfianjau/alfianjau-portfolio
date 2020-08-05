@@ -8,7 +8,7 @@ const postQuery = `{
         createdAt(formatString: "MMM D, YYYY")
         childContentfulPostBodyTextNode {
           childMarkdownRemark {
-            excerpt(pruneLength: 5000)
+            excerpt(pruneLength: 300)
           }
         }
       }

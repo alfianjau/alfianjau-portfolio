@@ -87,7 +87,7 @@
       "title": "MY PERSONAL SITE",
       "portfolioItem": [{
           "title": "Web view",
-          "description": "A journey to create fast JAM Stack based site with the help of Contentful, GatsbyJS and Styled component",
+          "description": "A journey to create fast JAM Stack based site with the help of Contentful, Algolia, GatsbyJS and Styled component",
           "image": "../../assets/image/portfolio/portfolio-web.webp",
           "link": "https://www.alfianjau.com/",
           "featuredIn": "AWWWARDS",
@@ -103,6 +103,9 @@
             },
             {
               "content": "Contentful"
+            },
+            {
+              "content": "Algolia Search API"
             },
             {
               "content": "Styled component"

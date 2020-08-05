@@ -8,7 +8,7 @@ const postQuery = `{
         createdAt(formatString: "MMM D, YYYY")
         childContentfulPostBodyTextNode {
           childMarkdownRemark {
-            excerpt(pruneLength: 100)
+            excerpt(pruneLength: 5000)
           }
         }
       }
@@ -16,9 +16,12 @@ const postQuery = `{
   }
 }`;
 
+
+
 const flatten = (arr) =>
-  arr.map(({ node }) => ({
-    ...node
+  arr.map(({ node: { excerpt, ...rest } }) => ({
+    ...excerpt,
+    ...rest
   }));
 const settings = { attributesToSnippet: [`excerpt:20`] };
 

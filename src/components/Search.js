@@ -2,7 +2,7 @@ import React from 'react';
 import algoliasearch from 'algoliasearch/lite';
 import { connectHits, InstantSearch, SearchBox } from 'react-instantsearch-dom';
 import { Link, safePrefix } from '../gatsby/utils';
-import { moment } from 'moment';
+// import { moment } from 'moment';
 
 const Hits = connectHits(({ hits }) => (
     <div>
@@ -24,7 +24,7 @@ const Hits = connectHits(({ hits }) => (
                                         </h2>
                                     </header>
                                     <div className="post-excerpt">
-                                        <p>{hit.childMarkdownRemark.excerpt}</p>
+                                        <p>{hit.childContentfulPostBodyTextNode.childMarkdownRemark.excerpt}</p>
                                     </div>
                                     <footer className="post-meta">
                                         <time>{hit.createdAt}</time>

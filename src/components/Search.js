@@ -2,6 +2,7 @@ import React from 'react';
 import algoliasearch from 'algoliasearch/lite';
 import { connectHits, InstantSearch, SearchBox } from 'react-instantsearch-dom';
 import { Link, safePrefix } from '../gatsby/utils';
+import Img from "gatsby-image"
 // import { moment } from 'moment';
 
 const Hits = connectHits(({ hits }) => (
@@ -9,11 +10,12 @@ const Hits = connectHits(({ hits }) => (
         {hits.length ? (
             <div className="post-feed">
                 {hits.map((hit) => {
+                    console.log(hit)
                     return (
                         <article key={hit.id} className="post post-card">
                             <div className="post-card-inside">
                                 <Link className="post-card-thumbnail" to={`/blog${safePrefix(hit.slug)}`}>
-                                    {/* <img className="thumbnail" src={safePrefix(hit.heroImage.file.url)} alt={hit.title} /> */}
+                                    <Img className="thumbnail" fluid={hit.heroImage.fluid.src} alt={hit.title} />
                                 </Link>
                                 <div className="post-card-content">
                                     <header className="post-header">
@@ -24,7 +26,7 @@ const Hits = connectHits(({ hits }) => (
                                         </h2>
                                     </header>
                                     <div className="post-excerpt">
-                                        <p>{hit.childContentfulPostBodyTextNode.childMarkdownRemark.excerpt}</p>
+                                        <p>{hit.childMarkdownRemark.excerpt}</p>
                                     </div>
                                     <footer className="post-meta">
                                         <time>{hit.createdAt}</time>

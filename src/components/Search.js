@@ -10,7 +10,6 @@ const Hits = connectHits(({ hits }) => (
         {hits.length ? (
             <div className="post-feed">
                 {hits.map((hit) => {
-                    console.log(hit)
                     return (
                         <article key={hit.id} className="post post-card">
                             <div className="post-card-inside">

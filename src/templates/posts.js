@@ -34,7 +34,7 @@ const Posts = ({ data, pageContext }) => {
     <Layout>
       <SEO title={startCase(basePath)} image={ogImage} />
       <Container>
-        <Search indexName="Posts"></Search>
+        {/* <Search indexName="Posts"></Search> */}
         {isFirstPage ? (
           <CardList>
             <Card {...featuredPost} featured basePath={basePath} />

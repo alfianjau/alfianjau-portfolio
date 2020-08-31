@@ -1,8 +1,8 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import algoliasearch from 'algoliasearch/lite';
-import { connectHits, InstantSearch, SearchBox } from 'react-instantsearch-dom';
-import { Link, safePrefix } from '../gatsby/utils';
+import algoliasearch from 'algoliasearch/lite'
+import { connectHits, InstantSearch, SearchBox } from 'react-instantsearch-dom'
+import { Link, safePrefix } from '../gatsby/utils'
 import Search from '../components/Search'
 import Layout from '../components/Layout'
 import CardList from '../components/CardList'
@@ -43,12 +43,12 @@ const Posts = ({ data, pageContext }) => {
             ))}
           </CardList>
         ) : (
-            <CardList>
-              {posts.map(({ node: post }) => (
-                <Card key={post.id} {...post} basePath={basePath} />
-              ))}
-            </CardList>
-          )}
+          <CardList>
+            {posts.map(({ node: post }) => (
+              <Card key={post.id} {...post} basePath={basePath} />
+            ))}
+          </CardList>
+        )}
       </Container>
       <Pagination context={pageContext} />
     </Layout>
@@ -91,4 +91,3 @@ export const query = graphql`
 `
 
 export default Posts
-

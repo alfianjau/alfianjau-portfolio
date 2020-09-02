@@ -96,7 +96,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-chatwoot`,
       options: {
-        baseUrl: 'http://localhost:8000', // Required
+        baseUrl: 'process.env.CHATWOOT_URL', // Required
         websiteToken: process.env.WEBSITE_TOKEN, // Required
         includeInDevelopment: false, // Optional
         chatwootSettings: {}, // Optional

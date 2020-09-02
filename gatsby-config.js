@@ -15,9 +15,8 @@ try {
   }
 }
 
-const queries = require('./src/gatsby/utils/algolia');
-require('dotenv').config();
-
+const queries = require('./src/gatsby/utils/algolia')
+require('dotenv').config()
 
 module.exports = {
   siteMetadata: {
@@ -95,6 +94,15 @@ module.exports = {
     },
     `gatsby-plugin-catch-links`,
     {
+      resolve: `gatsby-plugin-chatwoot`,
+      options: {
+        baseUrl: 'http://localhost:8000', // Required
+        websiteToken: process.env.WEBSITE_TOKEN, // Required
+        includeInDevelopment: false, // Optional
+        chatwootSettings: {}, // Optional
+      },
+    },
+    {
       resolve: 'gatsby-source-contentful',
       options:
         process.env.NODE_ENV === 'development'
@@ -121,7 +129,7 @@ module.exports = {
         icon: './static/images/favicon.png',
       },
     },
-    {
+    /* {
       resolve: `gatsby-plugin-algolia`,
       options: {
         appId: process.env.GATSBY_ALGOLIA_APP_ID,
@@ -129,7 +137,7 @@ module.exports = {
         queries,
         chunkSize: 10000,
       },
-    },
+    }, */
     'gatsby-plugin-offline',
     {
       resolve: `gatsby-plugin-schema-snapshot`,

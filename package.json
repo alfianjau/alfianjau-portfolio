@@ -37,7 +37,7 @@
     "gatsby-source-contentful": "^2.1.85",
     "gatsby-source-filesystem": "^2.1.46",
     "gatsby-transformer-json": "^2.2.25",
-    "gatsby-transformer-remark": "^2.6.50",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.3.13",
     "inquirer": "^7.0.4",
     "lodash": "^4.17.15",
